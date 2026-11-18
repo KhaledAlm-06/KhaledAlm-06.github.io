@@ -6,18 +6,16 @@
   <title>Khaled Almasharqah — Software Engineering CV</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --navy: #0f172a;
-      --accent: #1e3a5f;
-      --text: #1e293b;
-      --muted: #475569;
-      --border: #e2e8f0;
-      --card-bg: #f8fafc;
+      --ink: #18181b;
+      --sub: #3f3f46;
+      --muted: #71717a;
+      --rule: #d4d4d8;
       --paper: #ffffff;
-      --screen-bg: #0f172a;
-      --sans: "Inter", "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      --screen-bg: #27272a;
+      --font: "Source Sans 3", "Calibri", "Helvetica Neue", Arial, sans-serif;
     }
 
     *, *::before, *::after {
@@ -26,21 +24,21 @@
 
     body {
       margin: 0;
-      padding: 24px 16px 48px;
+      padding: 22px 16px 40px;
       background: var(--screen-bg);
-      color: var(--text);
-      font-family: var(--sans);
+      color: var(--ink);
+      font-family: var(--font);
       -webkit-font-smoothing: antialiased;
     }
 
     .toolbar {
       width: 100%;
       max-width: 210mm;
-      margin: 0 auto 14px;
-      padding: 10px 14px;
-      background: #1e293b;
-      border: 1px solid rgba(255, 255, 255, 0.12);
-      border-radius: 8px;
+      margin: 0 auto 12px;
+      padding: 9px 14px;
+      background: #18181b;
+      border: 1px solid #3f3f46;
+      border-radius: 6px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -49,10 +47,9 @@
     }
 
     .toolbar-tag {
-      font-size: 12px;
-      font-weight: 500;
-      color: #cbd5e1;
-      letter-spacing: 0.02em;
+      font-size: 12.5px;
+      font-weight: 600;
+      color: #e4e4e7;
     }
 
     .toolbar-actions {
@@ -62,49 +59,47 @@
     }
 
     .tb-btn {
-      font-family: var(--sans);
-      font-size: 12.5px;
+      font-family: var(--font);
+      font-size: 13px;
       font-weight: 600;
-      padding: 7px 13px;
-      border-radius: 6px;
+      padding: 6px 13px;
+      border-radius: 5px;
       text-decoration: none;
       cursor: pointer;
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      background: #0f172a;
-      color: #f8fafc;
+      border: 1px solid #52525b;
+      background: #27272a;
+      color: #fafafa;
     }
 
     .tb-btn:hover {
-      border-color: #ffffff;
+      border-color: #fafafa;
     }
 
     .tb-btn-primary {
-      background: #ffffff;
-      color: #0f172a;
-      border-color: #ffffff;
+      background: #fafafa;
+      color: #18181b;
+      border-color: #fafafa;
     }
 
     .tb-btn-primary:hover {
-      background: #e2e8f0;
+      background: #e4e4e7;
     }
 
     .cv-sheet {
       width: 210mm;
       margin: 0 auto;
-      padding: 16mm 18mm;
+      padding: 13mm 15mm;
       background: var(--paper);
-      color: var(--text);
-      font-family: var(--sans);
-      font-size: 10.5pt;
-      line-height: 1.55;
-      border-radius: 4px;
-      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
+      color: var(--ink);
+      font-family: var(--font);
+      font-size: 10pt;
+      line-height: 1.42;
+      box-shadow: 0 18px 44px rgba(0, 0, 0, 0.42);
     }
 
     .cv-sheet a {
-      color: var(--accent);
+      color: var(--ink);
       text-decoration: none;
-      font-weight: 500;
     }
 
     .cv-sheet a:hover {
@@ -115,58 +110,51 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      gap: 20px;
-      padding-bottom: 16px;
-      margin-bottom: 18px;
-      border-bottom: 2px solid var(--accent);
+      gap: 18px;
+      padding-bottom: 9px;
+      margin-bottom: 10px;
+      border-bottom: 1.5px solid var(--ink);
     }
 
     .cv-header-info h1 {
-      margin: 0 0 4px;
-      font-size: 24pt;
+      margin: 0 0 2px;
+      font-size: 20.5pt;
       font-weight: 700;
-      letter-spacing: -0.02em;
-      line-height: 1.15;
-      color: var(--navy);
+      letter-spacing: -0.015em;
+      line-height: 1.12;
+      color: var(--ink);
     }
 
     .cv-subtitle {
-      margin: 0 0 10px;
-      font-size: 11.5pt;
-      font-weight: 500;
-      color: #334155;
+      margin: 0 0 4px;
+      font-size: 10.8pt;
+      font-weight: 600;
+      color: var(--sub);
     }
 
-    .cv-contacts {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
+    .cv-contact-line {
       font-size: 9.5pt;
+      color: var(--sub);
+    }
+
+    .cv-sep {
+      margin: 0 7px;
       color: var(--muted);
     }
 
-    .cv-pill {
-      background: var(--card-bg);
-      border: 1px solid var(--border);
-      border-radius: 6px;
-      padding: 3px 9px;
-      color: var(--navy);
-      white-space: nowrap;
-    }
-
     .cv-portrait {
-      width: 96px;
-      height: 112px;
-      border-radius: 12px;
+      width: 84px;
+      height: 100px;
+      border-radius: 6px;
       object-fit: cover;
       object-position: center 22%;
-      border: 2px solid var(--border);
+      border: 1px solid var(--rule);
       flex-shrink: 0;
       display: block;
     }
 
     .cv-section {
-      margin-bottom: 18px;
+      margin-bottom: 9px;
     }
 
     .cv-section:last-child {
@@ -174,23 +162,23 @@
     }
 
     .cv-section h2 {
-      margin: 0 0 10px;
-      padding-bottom: 4px;
-      font-size: 11.5pt;
+      margin: 0 0 4px;
+      padding-bottom: 2px;
+      font-size: 10.2pt;
       font-weight: 700;
-      letter-spacing: 0.04em;
+      letter-spacing: 0.05em;
       text-transform: uppercase;
-      color: var(--accent);
-      border-bottom: 1.5px solid var(--border);
+      color: var(--ink);
+      border-bottom: 1px solid var(--rule);
     }
 
-    .cv-summary {
+    .cv-profile {
       margin: 0;
-      color: var(--text);
+      color: var(--sub);
     }
 
     .cv-entry {
-      margin-bottom: 12px;
+      margin-bottom: 5.5px;
       break-inside: avoid;
       page-break-inside: avoid;
     }
@@ -199,107 +187,75 @@
       margin-bottom: 0;
     }
 
-    .cv-entry-head {
+    .cv-row {
       display: flex;
       justify-content: space-between;
       align-items: baseline;
       gap: 12px;
-      margin-bottom: 3px;
     }
 
-    .cv-entry-title {
+    .cv-role {
       font-weight: 700;
-      color: var(--navy);
+      color: var(--ink);
     }
 
-    .cv-entry-org {
-      color: var(--muted);
-      font-weight: 500;
+    .cv-org {
+      color: var(--sub);
+      font-weight: 400;
     }
 
-    .cv-entry-date {
-      font-size: 9.5pt;
-      font-weight: 500;
+    .cv-date {
+      font-size: 9.3pt;
       color: var(--muted);
       white-space: nowrap;
       flex-shrink: 0;
     }
 
-    .cv-entry p {
-      margin: 2px 0 0;
-      color: var(--text);
+    .cv-note {
+      margin: 1px 0 0;
+      color: var(--sub);
     }
 
     .cv-bullets {
-      margin: 4px 0 0;
-      padding-left: 18px;
+      margin: 2px 0 0;
+      padding-left: 17px;
+      color: var(--sub);
     }
 
     .cv-bullets li {
-      margin-bottom: 3px;
+      margin-bottom: 1.5px;
     }
 
-    .cv-skills-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 12px;
-    }
-
-    .cv-skill-card {
-      background: var(--card-bg);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 10px 13px;
-      break-inside: avoid;
-      page-break-inside: avoid;
-    }
-
-    .cv-skill-card h3 {
-      margin: 0 0 6px;
-      font-size: 10pt;
-      font-weight: 700;
-      color: var(--accent);
-    }
-
-    .cv-skill-card p {
-      margin: 0 0 4px;
-      font-size: 9.7pt;
-      line-height: 1.48;
-    }
-
-    .cv-skill-card p:last-child {
-      margin-bottom: 0;
-    }
-
-    .cv-footer-row {
+    .cv-lines {
       display: flex;
-      flex-wrap: wrap;
-      gap: 12px 28px;
-      font-size: 10pt;
+      flex-direction: column;
+      gap: 3px;
+      color: var(--sub);
     }
 
-    @media screen and (max-width: 820px) {
+    .cv-lines strong {
+      color: var(--ink);
+    }
+
+    @media screen and (max-width: 780px) {
       .cv-sheet {
         width: 100%;
-        padding: 22px 18px;
+        padding: 20px 18px;
       }
       .cv-header {
         flex-direction: column-reverse;
         align-items: flex-start;
       }
-      .cv-entry-head {
+      .cv-row {
         flex-direction: column;
-        gap: 2px;
-      }
-      .cv-skills-grid {
-        grid-template-columns: 1fr;
+        gap: 1px;
       }
     }
 
     @media print {
       @page {
         size: A4 portrait;
-        margin: 16mm 18mm;
+        margin: 11mm 14mm;
       }
       body {
         background: #ffffff;
@@ -316,21 +272,17 @@
         margin: 0;
         padding: 0;
         box-shadow: none;
-        border-radius: 0;
-        font-size: 10.5pt;
-        line-height: 1.55;
+        font-size: 9.5pt;
+        line-height: 1.36;
       }
       .cv-header {
         flex-direction: row !important;
         justify-content: space-between;
         align-items: center;
       }
-      .cv-entry-head {
+      .cv-row {
         flex-direction: row !important;
         justify-content: space-between;
-      }
-      .cv-skills-grid {
-        grid-template-columns: 1fr 1fr !important;
       }
     }
   </style>
@@ -349,84 +301,76 @@
     <header class="cv-header">
       <div class="cv-header-info">
         <h1>Khaled Almasharqah</h1>
-        <p class="cv-subtitle">Third-Year Software Engineering Student &middot; Heriot-Watt University</p>
-        <div class="cv-contacts">
-          <span class="cv-pill">+44 7878 873206</span>
-          <a class="cv-pill" href="mailto:almasharqahkhaled@gmail.com">almasharqahkhaled@gmail.com</a>
-          <a class="cv-pill" href="https://khaledalm-06.github.io/" target="_blank" rel="noopener noreferrer">khaledalm-06.github.io</a>
+        <p class="cv-subtitle">Software Engineering Student (3rd Year) &mdash; Heriot-Watt University</p>
+        <div class="cv-contact-line">
+          <span>+44 7878 873206</span><span class="cv-sep">&middot;</span>
+          <a href="mailto:almasharqahkhaled@gmail.com">almasharqahkhaled@gmail.com</a><span class="cv-sep">&middot;</span>
+          <a href="https://khaledalm-06.github.io/" target="_blank" rel="noopener noreferrer">khaledalm-06.github.io</a>
         </div>
       </div>
       <img class="cv-portrait" src="data:image/jpeg;base64,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" alt="Khaled Almasharqah portrait" />
     </header>
 
     <section class="cv-section">
-      <h2>Personal Summary</h2>
-      <p class="cv-summary">
-        Third-year Software Engineering student at Heriot-Watt University combining strong systems programming fundamentals with calm, frontline problem-solving in high-volume customer environments. Fluent in English and Arabic, seeking a 2027 software engineering internship or placement where I can contribute from day one.
+      <h2>Profile</h2>
+      <p class="cv-profile">
+        Third-year Software Engineering student at Heriot-Watt University. I enjoy figuring out how things work under the hood, whether that means writing a compiler in Java, building a physics engine in JavaScript, or fixing a jammed ticket kiosk during a busy shift at Vue. Fluent in English and Arabic, calm when things get busy, and looking for a 2027 software engineering internship or placement.
       </p>
     </section>
 
     <section class="cv-section">
       <h2>Education</h2>
       <div class="cv-entry">
-        <div class="cv-entry-head">
-          <span><span class="cv-entry-title">MEng Software Engineering (Year 3)</span> <span class="cv-entry-org">&middot; Heriot-Watt University</span></span>
-          <span class="cv-entry-date">2024 &ndash; 2029 (Expected)</span>
+        <div class="cv-row">
+          <span><span class="cv-role">Heriot-Watt University</span> <span class="cv-org">&mdash; MEng Software Engineering (3rd Year)</span></span>
+          <span class="cv-date">2024 &ndash; 2029</span>
         </div>
-        <p>Key Modules: C99 Systems Programming, Data Structures &amp; Algorithms, Software Design &amp; Validation, Relational Databases.</p>
+        <p class="cv-note">Modules: C99 Systems Programming, Data Structures &amp; Algorithms, Software Design &amp; Validation, Relational Databases.</p>
       </div>
       <div class="cv-entry">
-        <div class="cv-entry-head">
-          <span><span class="cv-entry-title">Secondary Education (Highers)</span></span>
-          <span class="cv-entry-date">2022 &ndash; 2024</span>
+        <div class="cv-row">
+          <span><span class="cv-role">Highers &amp; Advanced Highers</span></span>
+          <span class="cv-date">2022 &ndash; 2024</span>
         </div>
-        <p>Higher Mathematics, Higher English, Higher Equivalent Arabic.</p>
+        <p class="cv-note">Advanced Higher Computing, Higher Mathematics, Higher English, Higher Equivalent Arabic.</p>
       </div>
     </section>
 
     <section class="cv-section">
-      <h2>Technical &amp; Core Skills</h2>
-      <div class="cv-skills-grid">
-        <div class="cv-skill-card">
-          <h3>Technical Stack</h3>
-          <p><strong>Languages:</strong> Python, Java, C (C99), JavaScript, SQL, PHP, HTML &amp; CSS</p>
-          <p><strong>Tools &amp; Workflow:</strong> Git, Linux CLI, Agile / Scrum, VS Code, Object-Oriented Design</p>
-        </div>
-        <div class="cv-skill-card">
-          <h3>Core Strengths</h3>
-          <p><strong>Problem Solving:</strong> Systems debugging, hardware/POS troubleshooting, algorithmic design</p>
-          <p><strong>Communication:</strong> Bilingual (English &amp; Arabic), team leadership, calm conflict resolution</p>
-        </div>
+      <h2>Skills</h2>
+      <div class="cv-lines">
+        <div><strong>Programming &amp; Tech:</strong> Python, Java, C (C99), JavaScript, SQL, PHP, HTML/CSS, Git, Linux</div>
+        <div><strong>Day-to-Day Strengths:</strong> Calm under pressure, troubleshooting hardware &amp; tills, team leadership, bilingual (English &amp; Arabic)</div>
       </div>
     </section>
 
     <section class="cv-section">
-      <h2>Selected Projects</h2>
+      <h2>Projects</h2>
       <div class="cv-entry">
-        <div class="cv-entry-head">
-          <span><span class="cv-entry-title">Multi-Modal Transport &amp; Route-Booking Platform</span> <span class="cv-entry-org">&middot; PHP, JavaScript, SQL, OpenStreetMap</span></span>
+        <div class="cv-row">
+          <span><span class="cv-role">Transport &amp; Route-Booking Web App (3rd Year Group Project)</span> <span class="cv-org">&mdash; PHP, JavaScript, SQL, OpenStreetMap</span></span>
         </div>
         <ul class="cv-bullets">
-          <li>Built a full-stack journey planner and ticket-booking web app in a Stage 3 Agile Scrum team.</li>
-          <li>Integrated live OpenStreetMap routing with a relational SQL backend for schedules and fares.</li>
+          <li>Worked in a university Scrum team to build a route-planning and ticket-booking site using OpenStreetMap and a SQL database.</li>
+          <li>Built backend fare logic, map routing integration, and tested booking flows across weekly sprints.</li>
         </ul>
       </div>
       <div class="cv-entry">
-        <div class="cv-entry-head">
-          <span><span class="cv-entry-title">Interactive 3D Renderer, 2D Physics Engine &amp; Portfolio</span> <span class="cv-entry-org">&middot; JavaScript, HTML5 Canvas</span></span>
+        <div class="cv-row">
+          <span><span class="cv-role">3D Renderer &amp; 2D Physics Engine</span> <span class="cv-org">&mdash; JavaScript, HTML5 Canvas</span></span>
         </div>
         <ul class="cv-bullets">
-          <li>Created a real-time 3D software rasterizer and 2D rigid-body physics engine running in the browser.</li>
-          <li>Built a custom Virtual DOM and state engine to power my interactive portfolio website.</li>
+          <li>Built a 3D software renderer and a 2D collision/physics engine from scratch on an HTML canvas without external libraries.</li>
+          <li>Used the same custom state and DOM code to build my personal portfolio site.</li>
         </ul>
       </div>
       <div class="cv-entry">
-        <div class="cv-entry-head">
-          <span><span class="cv-entry-title">Custom Language Model &amp; JVM Bytecode Compiler</span> <span class="cv-entry-org">&middot; Python, Java</span></span>
+        <div class="cv-row">
+          <span><span class="cv-role">Small Language Model &amp; Java Bytecode Compiler</span> <span class="cv-org">&mdash; Python, Java</span></span>
         </div>
         <ul class="cv-bullets">
-          <li>Implemented a GPT-style language model and automatic differentiation engine from scratch in Python.</li>
-          <li>Built a Java compiler that parses source code into executable JVM <code>.class</code> bytecode.</li>
+          <li>Wrote a small GPT-style language model and autograd engine in plain Python to learn how transformers train from scratch.</li>
+          <li>Built a compiler in Java that turns a simple custom language into runnable JVM <code>.class</code> bytecode.</li>
         </ul>
       </div>
     </section>
@@ -434,24 +378,24 @@
     <section class="cv-section">
       <h2>Work Experience</h2>
       <div class="cv-entry">
-        <div class="cv-entry-head">
-          <span><span class="cv-entry-title">Customer Assistant</span> <span class="cv-entry-org">&middot; Vue Cinema</span></span>
-          <span class="cv-entry-date">Oct 2024 &ndash; Aug 2025</span>
+        <div class="cv-row">
+          <span><span class="cv-role">Customer Assistant</span> <span class="cv-org">&mdash; Vue Cinema</span></span>
+          <span class="cv-date">Oct 2024 &ndash; Aug 2025</span>
         </div>
         <ul class="cv-bullets">
-          <li>Delivered fast, composed guest service during peak weekends and sold-out screenings.</li>
-          <li>Troubleshot self-service ticketing kiosks and handheld scanners to keep queues moving.</li>
-          <li>Consistently met upselling targets for combo upgrades and premium seating with accurate till handling.</li>
+          <li>Kept service moving smoothly during sold-out screenings and school holidays when queues stretched across the foyer.</li>
+          <li>Handled cash and card payments across tills, kiosks, and scanners, and fixed basic kiosk and scanner faults on the spot.</li>
+          <li>Resolved customer booking and seating issues calmly and directly without needing to escalate.</li>
         </ul>
       </div>
       <div class="cv-entry">
-        <div class="cv-entry-head">
-          <span><span class="cv-entry-title">Front of House</span> <span class="cv-entry-org">&middot; Pepe&rsquo;s Grill</span></span>
-          <span class="cv-entry-date">Aug 2024 &ndash; Nov 2024</span>
+        <div class="cv-row">
+          <span><span class="cv-role">Front of House</span> <span class="cv-org">&mdash; Pepe&rsquo;s Grill</span></span>
+          <span class="cv-date">Aug 2024 &ndash; Nov 2024</span>
         </div>
         <ul class="cv-bullets">
-          <li>Managed POS transactions, online orders, and counter service during high-turnaround shifts.</li>
-          <li>Coordinated between kitchen and front-of-house teams and helped train new staff.</li>
+          <li>Worked busy lunch and evening shifts on the counter and till, coordinating with the kitchen so orders went out quickly.</li>
+          <li>Stepped in wherever needed during peak rushes and helped new staff get comfortable on the till.</li>
         </ul>
       </div>
     </section>
@@ -459,31 +403,30 @@
     <section class="cv-section">
       <h2>Volunteering &amp; Leadership</h2>
       <div class="cv-entry">
-        <div class="cv-entry-head">
-          <span><span class="cv-entry-title">Youth Mentor &amp; Scout Leader</span> <span class="cv-entry-org">&middot; Community Youth &amp; Scout Programmes</span></span>
-          <span class="cv-entry-date">Aug 2023 &ndash; May 2024</span>
+        <div class="cv-row">
+          <span><span class="cv-role">Youth Mentor &amp; Scout Leader</span></span>
+          <span class="cv-date">Aug 2023 &ndash; May 2024</span>
         </div>
         <ul class="cv-bullets">
-          <li>Led weekly digital literacy workshops and outdoor team-building challenges for teens aged 13&ndash;17.</li>
-          <li>Planned group events that built confidence, teamwork, and public speaking skills.</li>
+          <li>Ran weekly workshops and outdoor group challenges for 13&ndash;17-year-olds, helping quieter members get involved and build confidence.</li>
         </ul>
       </div>
       <div class="cv-entry">
-        <div class="cv-entry-head">
-          <span><span class="cv-entry-title">Bilingual Teaching Assistant</span> <span class="cv-entry-org">&middot; Arabic &amp; English Support</span></span>
-          <span class="cv-entry-date">Sep 2021 &ndash; Jul 2024</span>
+        <div class="cv-row">
+          <span><span class="cv-role">Arabic &amp; English Teaching Assistant</span></span>
+          <span class="cv-date">Sep 2021 &ndash; Jul 2024</span>
         </div>
         <ul class="cv-bullets">
-          <li>Assisted teachers in Arabic and English classes and tracked student progress data.</li>
+          <li>Supported teachers in bilingual Arabic and English lessons and helped track student progress across the term.</li>
         </ul>
       </div>
     </section>
 
     <section class="cv-section">
-      <h2>Certifications &amp; Languages</h2>
-      <div class="cv-footer-row">
+      <h2>Certifications &amp; Qualifications</h2>
+      <div class="cv-lines">
+        <div><strong>Qualifications:</strong> 3rd Year Software Engineering &middot; Advanced Higher Computing &middot; First Aid Certified</div>
         <div><strong>Languages:</strong> English (Fluent) &middot; Arabic (Fluent)</div>
-        <div><strong>Certifications:</strong> First Aid Certified &middot; Barista Trained</div>
       </div>
     </section>
   </main>

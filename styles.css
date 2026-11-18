@@ -1039,16 +1039,16 @@ body {
   color: var(--gold-soft);
 }
 
-/* Modern Clean UK Software Engineering CV */
+/* Clean Human-Typeset UK Software Engineering CV */
 .cv-paper {
   background: #ffffff;
-  color: #1e293b;
-  max-width: 860px;
+  color: #18181b;
+  max-width: 840px;
 }
 
 .cv-toolbar {
-  background: #f8fafc;
-  border-bottom: 1px solid #e2e8f0;
+  background: #f4f4f5;
+  border-bottom: 1px solid #d4d4d8;
   padding: 12px 22px;
   display: flex;
   justify-content: space-between;
@@ -1058,17 +1058,16 @@ body {
 }
 
 .cv-sheet {
-  padding: 34px 40px;
-  font-family: "Inter", "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  font-size: 10.5pt;
-  line-height: 1.55;
-  color: #1e293b;
+  padding: 32px 38px;
+  font-family: "Source Sans 3", "Calibri", "Helvetica Neue", Arial, sans-serif;
+  font-size: 10pt;
+  line-height: 1.42;
+  color: #18181b;
 }
 
 .cv-sheet a {
-  color: #1e3a5f;
+  color: #18181b;
   text-decoration: none;
-  font-weight: 500;
 }
 
 .cv-sheet a:hover {
@@ -1079,59 +1078,52 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 20px;
-  padding-bottom: 16px;
-  margin-bottom: 18px;
-  border-bottom: 2px solid #1e3a5f;
+  gap: 18px;
+  padding-bottom: 10px;
+  margin-bottom: 12px;
+  border-bottom: 1.5px solid #18181b;
 }
 
 .cv-header-info h1 {
-  margin: 0 0 4px;
+  margin: 0 0 2px;
   font-family: inherit;
-  font-size: 24pt;
+  font-size: 20.5pt;
   font-weight: 700;
-  letter-spacing: -0.02em;
-  line-height: 1.15;
-  color: #0f172a;
+  letter-spacing: -0.015em;
+  line-height: 1.12;
+  color: #18181b;
 }
 
 .cv-subtitle {
-  margin: 0 0 10px;
-  font-size: 11.5pt;
-  font-weight: 500;
-  color: #334155;
+  margin: 0 0 4px;
+  font-size: 10.8pt;
+  font-weight: 600;
+  color: #3f3f46;
 }
 
-.cv-contacts {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
+.cv-contact-line {
   font-size: 9.5pt;
-  color: #475569;
+  color: #3f3f46;
 }
 
-.cv-pill {
-  background: #f8fafc;
-  border: 1px solid #e2e8f0;
-  border-radius: 6px;
-  padding: 3px 9px;
-  color: #0f172a;
-  white-space: nowrap;
+.cv-sep {
+  margin: 0 7px;
+  color: #71717a;
 }
 
 .cv-portrait {
-  width: 96px;
-  height: 112px;
-  border-radius: 12px;
+  width: 84px;
+  height: 100px;
+  border-radius: 6px;
   object-fit: cover;
   object-position: center 22%;
-  border: 2px solid #e2e8f0;
+  border: 1px solid #d4d4d8;
   flex-shrink: 0;
   display: block;
 }
 
 .cv-section {
-  margin-bottom: 18px;
+  margin-bottom: 11px;
 }
 
 .cv-section:last-child {
@@ -1139,24 +1131,24 @@ body {
 }
 
 .cv-section h2 {
-  margin: 0 0 10px;
-  padding-bottom: 4px;
+  margin: 0 0 5px;
+  padding-bottom: 2px;
   font-family: inherit;
-  font-size: 11.5pt;
+  font-size: 10.2pt;
   font-weight: 700;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #1e3a5f;
-  border-bottom: 1.5px solid #e2e8f0;
+  color: #18181b;
+  border-bottom: 1px solid #d4d4d8;
 }
 
-.cv-summary {
+.cv-profile {
   margin: 0;
-  color: #1e293b;
+  color: #3f3f46;
 }
 
 .cv-entry {
-  margin-bottom: 12px;
+  margin-bottom: 6px;
   break-inside: avoid;
   page-break-inside: avoid;
 }
@@ -1165,84 +1157,56 @@ body {
   margin-bottom: 0;
 }
 
-.cv-entry-head {
+.cv-row {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   gap: 12px;
-  margin-bottom: 3px;
+  margin-top: 0;
 }
 
-.cv-entry-title {
+.cv-role {
   font-weight: 700;
-  color: #0f172a;
+  color: #18181b;
 }
 
-.cv-entry-org {
-  color: #475569;
-  font-weight: 500;
+.cv-org {
+  color: #3f3f46;
+  font-weight: 400;
 }
 
-.cv-entry-date {
-  font-size: 9.5pt;
-  font-weight: 500;
-  color: #475569;
+.cv-date {
+  font-size: 9.3pt;
+  color: #71717a;
   white-space: nowrap;
   flex-shrink: 0;
 }
 
-.cv-entry p {
-  margin: 2px 0 0;
-  color: #1e293b;
+.cv-note {
+  margin: 1px 0 0;
+  color: #3f3f46;
 }
 
 .cv-bullets {
-  margin: 4px 0 0;
-  padding-left: 18px;
+  margin: 2px 0 0;
+  padding-left: 17px;
   list-style-type: disc;
+  color: #3f3f46;
 }
 
 .cv-bullets li {
-  margin-bottom: 3px;
+  margin-bottom: 1.5px;
 }
 
-.cv-skills-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px;
-}
-
-.cv-skill-card {
-  background: #f8fafc;
-  border: 1px solid #e2e8f0;
-  border-radius: 8px;
-  padding: 10px 13px;
-  break-inside: avoid;
-  page-break-inside: avoid;
-}
-
-.cv-skill-card h3 {
-  margin: 0 0 6px;
-  font-size: 10pt;
-  font-weight: 700;
-  color: #1e3a5f;
-}
-
-.cv-skill-card p {
-  margin: 0 0 4px;
-  font-size: 9.7pt;
-  line-height: 1.48;
-}
-
-.cv-skill-card p:last-child {
-  margin-bottom: 0;
-}
-
-.cv-footer-row {
+.cv-lines {
   display: flex;
-  flex-wrap: wrap;
-  gap: 12px 28px;
-  font-size: 10pt;
+  flex-direction: column;
+  gap: 3px;
+  color: #3f3f46;
+}
+
+.cv-lines strong {
+  color: #18181b;
 }
 
 .toast {
@@ -1275,18 +1239,16 @@ body {
 @media screen and (max-width: 720px) {
   .contact-cards { grid-template-columns: 1fr; }
   .cv-header { flex-direction: column-reverse; align-items: flex-start; }
-  .cv-entry-head { flex-direction: column; gap: 2px; }
-  .cv-skills-grid { grid-template-columns: 1fr; }
+  .cv-row { flex-direction: column; gap: 1px; }
 }
 
 @media print {
-  @page { size: A4 portrait; margin: 16mm 18mm; }
+  @page { size: A4 portrait; margin: 11mm 14mm; }
   body { background: #fff; color: #000; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   .topbar, .shell, .footer-bar, .ambient-glow, .grid-backdrop, .no-print, .toast { display: none !important; }
   .modal-backdrop { position: static; background: #fff; padding: 0; display: block !important; }
   .modal-card { box-shadow: none; max-width: 100%; border-radius: 0; }
-  .cv-sheet { padding: 0; font-size: 10.5pt; line-height: 1.55; }
+  .cv-sheet { padding: 0; font-size: 9.5pt; line-height: 1.36; }
   .cv-header { flex-direction: row !important; justify-content: space-between; align-items: center; }
-  .cv-entry-head { flex-direction: row !important; justify-content: space-between; }
-  .cv-skills-grid { grid-template-columns: 1fr 1fr !important; }
+  .cv-row { flex-direction: row !important; justify-content: space-between; }
 }
