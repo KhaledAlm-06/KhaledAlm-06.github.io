@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Khaled Almasharqah — Software Engineering · Heriot-Watt University</title>
+  <meta name="description" content="Khaled Almasharqah — Third-year Software Engineering student at Heriot-Watt University. Bilingual problem-solver building systems from scratch." />
+  <link rel="icon" type="image/png" href="assets/avatar.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="ambient-glow glow-crimson" aria-hidden="true"></div>
+  <div class="ambient-glow glow-gold" aria-hidden="true"></div>
+  <div class="grid-backdrop" aria-hidden="true"></div>
+
+  <!-- Top Navigation -->
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a href="#top" class="brand">
+        <img src="assets/avatar.png" alt="Khaled Almasharqah avatar" class="brand-avatar" />
+        <span class="brand-text">Khaled Almasharqah</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#identity">Identity</a>
+        <a href="#bento">Who I Am</a>
+        <a href="#lab">Live Lab</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="topbar-right">
+        <button type="button" id="open-cv-btn" class="btn-gold-sm">1-Page CV</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top" class="shell">
+    <!-- AREA 1: HERO WITH DUAL-PERSONA 3D CARD STACK -->
+    <section id="identity" class="hero">
+      <div class="hero-copy">
+        <div class="status-line">
+          <span class="tag-crimson">HERIOT-WATT UNIVERSITY · YEAR 3 SOFTWARE ENGINEERING</span>
+        </div>
+
+        <h1 class="hero-headline">
+          Systems built from zero.<br />
+          <em>Composed</em> when things get loud.
+        </h1>
+
+        <p class="hero-bio">
+          I’m <strong>Khaled Almasharqah</strong>, a third-year Software Engineering student at Heriot-Watt University. Bilingual in English and Arabic, shaped by high-volume customer operations at Vue Cinema, youth mentorship, and building LLMs, compilers, and engines from scratch with no black boxes.
+        </p>
+
+        <div class="signal-pills">
+          <span class="signal-pill">EN / العربية Bilingual</span>
+          <span class="signal-pill">Customer Ops &amp; Youth Leadership</span>
+          <span class="signal-pill">Zero-Dependency Systems</span>
+        </div>
+
+        <div class="hero-cta">
+          <a href="#contact" class="btn-primary">Get in Touch</a>
+          <button type="button" id="open-cv-hero" class="btn-outline">View / Print CV</button>
+          <a href="https://github.com/KhaledAlm-06" target="_blank" rel="noopener noreferrer" class="btn-link">GitHub · KhaledAlm-06 &nearr;</a>
+        </div>
+      </div>
+
+      <!-- Interactive 3D Dual-Persona Stack -->
+      <div class="hero-visual">
+        <div class="persona-bar">
+          <button type="button" class="persona-btn active" data-persona="suit">01 // ON THE CLOCK · SUIT</button>
+          <button type="button" class="persona-btn" data-persona="helmet">02 // OFF THE CLOCK · VISOR</button>
+        </div>
+
+        <div class="card-stage" id="card-stage" title="Move cursor to tilt · Click to swap photos">
+          <div class="photo-card card-back" id="card-back">
+            <img id="img-back" src="assets/helmet.jpg" alt="Khaled wearing black helmet and red-and-white keffiyeh" />
+            <div class="card-caption">
+              <span class="mono-cap">02 // OFF THE CLOCK</span>
+              <strong>Precision &amp; Grit</strong>
+            </div>
+          </div>
+
+          <div class="photo-card card-front" id="card-front">
+            <img id="img-front" src="assets/suit.jpg" alt="Khaled in dark suit" />
+            <div class="specular-sheen" id="specular-sheen" aria-hidden="true"></div>
+
+            <div class="card-overlay-top">
+              <span class="kernel-badge" id="front-top-badge">DUAL PERSONA · CLICK TO SWAP</span>
+              <span class="tilt-readout" id="tilt-readout">N·L 0.94</span>
+            </div>
+
+            <div class="card-caption">
+              <span class="mono-cap" id="front-cap-kicker">01 // ON THE CLOCK</span>
+              <strong id="front-cap-title">Software Engineering · Year 3</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AREA 2: VISUAL BENTO GRID POWERED BY CUSTOM VIRTUAL DOM + REDUX STORE -->
+    <section id="bento" class="section-block">
+      <div class="section-head">
+        <div>
+          <span class="kicker">02 // WHO I AM IN FOUR FRAMES</span>
+          <h2>Beyond the syntax.</h2>
+        </div>
+
+        <div class="bento-filters" id="bento-filters">
+          <button type="button" class="pill-filter active" data-bento="all">All</button>
+          <button type="button" class="pill-filter" data-bento="edu">Heriot-Watt</button>
+          <button type="button" class="pill-filter" data-bento="work">Work &amp; Leadership</button>
+        </div>
+      </div>
+
+      <!-- VDOM + Redux Reactive Mount Point -->
+      <div id="vdom-bento-root"></div>
+
+      <!-- Live Telemetry Bar from Custom MiniVDOM & Redux Store -->
+      <div id="vdom-telemetry-root"></div>
+    </section>
+
+    <!-- AREA 3: LIVE INTERACTIVE LAB (3 PLAYABLE ENGINES) -->
+    <section id="lab" class="section-block">
+      <div class="section-head">
+        <div>
+          <span class="kicker">03 // PLAYABLE SYSTEMS LAB</span>
+          <h2>Don’t read about my code — <em>poke it.</em></h2>
+        </div>
+        <button type="button" id="open-repos-btn" class="btn-outline btn-sm">All 26 Flagship Repos &nearr;</button>
+      </div>
+
+      <div class="lab-trio">
+        <!-- Interactive Canvas 1: 3D Software Renderer -->
+        <article class="engine-card">
+          <div class="engine-head">
+            <div>
+              <span class="engine-num">ENGINE 01 · 3D GRAPHICS</span>
+              <h3>Software Rasterizer</h3>
+            </div>
+            <a href="https://github.com/KhaledAlm-06/3d-raytracer-and-rasterizer-js" target="_blank" rel="noopener noreferrer" class="mini-link">Repo &nearr;</a>
+          </div>
+
+          <div class="canvas-wrap">
+            <canvas id="canvas-3d" width="380" height="240"></canvas>
+            <span class="canvas-hud" id="hud-3d">DRAG TO ORBIT</span>
+          </div>
+
+          <div class="engine-controls">
+            <button type="button" class="ctrl-btn active" data-render="gouraud">Gouraud</button>
+            <button type="button" class="ctrl-btn" data-render="wire">Wireframe</button>
+            <button type="button" class="ctrl-btn" data-render="normal">Normals</button>
+          </div>
+          <p class="engine-note">4×4 projection matrices, backface culling &amp; Z-sorted shading with zero WebGL.</p>
+        </article>
+
+        <!-- Interactive Canvas 2: 2D Rigid-Body Physics -->
+        <article class="engine-card">
+          <div class="engine-head">
+            <div>
+              <span class="engine-num">ENGINE 02 · PHYSICS</span>
+              <h3>2D Rigid-Body Physics</h3>
+            </div>
+            <a href="https://github.com/KhaledAlm-06/build-your-own-x-portfolio/tree/main/projects/17-physics-engine/093-javascript-how-physics-engines-work" target="_blank" rel="noopener noreferrer" class="mini-link">Repo &nearr;</a>
+          </div>
+
+          <div class="canvas-wrap">
+            <canvas id="canvas-physics" width="380" height="240"></canvas>
+            <span class="canvas-hud" id="hud-physics">CLICK TO SPAWN</span>
+          </div>
+
+          <div class="engine-controls">
+            <button type="button" class="ctrl-btn active" id="phys-gravity">Gravity: ON</button>
+            <button type="button" class="ctrl-btn" id="phys-impulse">Pulse</button>
+            <button type="button" class="ctrl-btn" id="phys-reset">Reset</button>
+          </div>
+          <p class="engine-note">Impulse restitution solver, velocity vectors &amp; iterative Verlet pendulum constraints.</p>
+        </article>
+
+        <!-- Interactive Widget 3: GPT-2 Attention & JVM 0xCAFEBABE -->
+        <article class="engine-card">
+          <div class="engine-head">
+            <div>
+              <span class="engine-num">ENGINE 03 · AI &amp; COMPILERS</span>
+              <h3>Attention &amp; Bytecode</h3>
+            </div>
+            <a href="https://github.com/KhaledAlm-06/gpt-llm-from-scratch-python" target="_blank" rel="noopener noreferrer" class="mini-link">Repo &nearr;</a>
+          </div>
+
+          <div class="inspector-box" id="inspector-box"></div>
+
+          <div class="engine-controls">
+            <button type="button" class="ctrl-btn active" data-inspector="attention">GPT-2 Attention</button>
+            <button type="button" class="ctrl-btn" data-inspector="jvm">JVM 0xCAFEBABE</button>
+          </div>
+          <p class="engine-note">Inspect causal self-attention weights or step through compiled <code>fact(6)=720</code> opcodes.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- AREA 4: SLEEK CONTACT STRIP -->
+    <section id="contact" class="contact-strip">
+      <div class="contact-lead">
+        <span class="kicker">04 // LET’S TALK</span>
+        <h2>Open for 2027 SWE Internships &amp; Placements.</h2>
+      </div>
+
+      <div class="contact-cards">
+        <button type="button" class="contact-chip copy-trigger" data-copy="almasharqahkhaled@gmail.com">
+          <span class="chip-k">EMAIL</span>
+          <span class="chip-v">almasharqahkhaled@gmail.com</span>
+          <span class="chip-act">COPY</span>
+        </button>
+        <button type="button" class="contact-chip copy-trigger" data-copy="+447878873206">
+          <span class="chip-k">PHONE</span>
+          <span class="chip-v">+44 7878 873206</span>
+          <span class="chip-act">COPY</span>
+        </button>
+        <a class="contact-chip" href="https://github.com/KhaledAlm-06" target="_blank" rel="noopener noreferrer">
+          <span class="chip-k">GITHUB</span>
+          <span class="chip-v">github.com/KhaledAlm-06</span>
+          <span class="chip-act">&nearr;</span>
+        </a>
+        <button type="button" class="contact-chip" id="open-cv-footer">
+          <span class="chip-k">CURRICULUM VITAE</span>
+          <span class="chip-v">1-Page Software Eng CV</span>
+          <span class="chip-act">PRINT</span>
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer-bar">
+    <span>Khaled Almasharqah · Heriot-Watt University</span>
+    <span class="mono-foot">Powered by custom MiniVDOM, Redux Store, 3D Rasterizer &amp; 2D Physics</span>
+  </footer>
+
+  <!-- 26 Flagship Repos Drawer Modal -->
+  <div id="repos-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="repos-title" hidden>
+    <div class="modal-card dark-modal">
+      <div class="modal-head">
+        <div>
+          <span class="kicker">CURATED ARCHIVE · 26 REPOSITORIES</span>
+          <h3 id="repos-title">From-Scratch Systems &amp; AI Builds</h3>
+        </div>
+        <button type="button" id="close-repos-btn" class="btn-outline btn-sm">Close</button>
+      </div>
+      <div class="repos-filter-bar" id="repos-filter-bar"></div>
+      <div class="repos-grid" id="repos-grid"></div>
+    </div>
+  </div>
+
+  <!-- Print-Ready 1-Page CV Modal -->
+  <div id="cv-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="cv-title" hidden>
+    <div class="modal-card cv-paper">
+      <div class="cv-toolbar no-print">
+        <span id="cv-title" class="kicker" style="color:#4b4943; margin:0;">CURRICULUM VITAE · PRINT READY</span>
+        <div style="display:flex; gap:8px;">
+          <button type="button" id="print-cv-btn" class="btn-primary btn-sm">Print / Save PDF</button>
+          <button type="button" id="close-cv-btn" class="btn-outline btn-sm" style="background:#ffffff; color:#141413; border-color:#c9c2b5;">Close</button>
+        </div>
+      </div>
+
+      <article class="cv-sheet">
+        <header class="cv-header">
+          <div>
+            <h1>Khaled Almasharqah</h1>
+            <p class="cv-sub">Software Engineering (Year 3) · Heriot-Watt University</p>
+          </div>
+          <div class="cv-meta">
+            <div><span class="nowrap">almasharqahkhaled@gmail.com</span> · <span class="nowrap">+44 7878 873206</span></div>
+            <div><span class="nowrap">github.com/KhaledAlm-06</span> · <span class="nowrap">Bilingual: English &amp; Arabic</span></div>
+          </div>
+        </header>
+
+        <section class="cv-sec">
+          <h2>Profile</h2>
+          <p>Third-year Software Engineering student at Heriot-Watt University combining systems programming (Python, Java, C99, JavaScript/Node.js) with strong customer-facing communication, leadership, and composure in fast-paced environments.</p>
+        </section>
+
+        <section class="cv-sec">
+          <h2>Education</h2>
+          <div class="cv-row"><strong>Software Engineering (Year 3) — Heriot-Watt University</strong><span>2024 — Present</span></div>
+          <p>Modules: Hardware-Software Interface (C99 &amp; Memory Management), Data Structures &amp; Algorithms, Software Design &amp; Validation, Stage 3 Scrum Group Project (PHP/JS/SQL &amp; OpenStreetMap).</p>
+          <div class="cv-row"><strong>Secondary Education — Highers &amp; Certifications</strong><span>2022 — 2024</span></div>
+          <p>Higher Mathematics, Higher English, Higher Equivalent Arabic; First Aid Certified.</p>
+        </section>
+
+        <section class="cv-sec">
+          <h2>Selected From-Scratch Systems (Zero External Dependencies)</h2>
+          <ul>
+            <li><strong>GPT-2 LLM &amp; GRPO Reasoning Engine (Python):</strong> BPE tokenizer, reverse-mode autograd, causal self-attention &amp; GRPO distillation (<code>acc=1.00</code>, <code>KL=0.0228</code>).</li>
+            <li><strong>Distributed Kafka Commit Log (Java 21):</strong> Segmented binary <code>.log</code>/<code>.index</code> storage, CRC32 framing, ISR high-watermark isolation, failover &amp; group rebalancing.</li>
+            <li><strong>DBDB Storage Engine &amp; RESP2 Redis Server (Python):</strong> Crash-safe <code>fsync</code> superblock commits and multi-threaded TCP Redis server with TTL &amp; pipelines.</li>
+            <li><strong>Enkel JVM Compiler &amp; C Compiler (Java / OCaml):</strong> Emitted valid <code>0xCAFEBABE</code> bytecode executed on JDK 21 and x86-64 System V assembly.</li>
+          </ul>
+        </section>
+
+        <section class="cv-sec">
+          <h2>Experience &amp; Leadership</h2>
+          <div class="cv-row"><strong>Customer Assistant &amp; Floor Tech Support · Vue Cinema</strong><span>Oct 2024 — Aug 2025</span></div>
+          <ul><li>Resolved customer issues calmly during sold-out screenings and performed routine troubleshooting on ticketing kiosks and handheld scanners to minimize downtime.</li></ul>
+          <div class="cv-row"><strong>Front of House · Pepe’s Grill</strong><span>Aug 2024 — Nov 2024</span></div>
+          <ul><li>Managed high-volume POS orders, coordinated between kitchen and counter teams during peak shifts, and supported training new staff.</li></ul>
+          <div class="cv-row"><strong>Youth Mentor, Scout Leader &amp; Teaching Assistant (Arabic &amp; English)</strong><span>Sep 2021 — Jul 2024</span></div>
+          <ul><li>Supported Arabic and English classes, analyzed student performance records, mentored teens aged 13–17 in digital literacy workshops, and led outdoor Scout team challenges.</li></ul>
+        </section>
+      </article>
+    </div>
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+  <script src="app.js"></script>
+</body>
+</html>
