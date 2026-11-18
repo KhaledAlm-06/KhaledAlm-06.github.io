@@ -8,7 +8,7 @@
   <link rel="icon" type="image/png" href="assets/avatar.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -32,7 +32,7 @@
       </nav>
 
       <div class="topbar-right">
-        <button type="button" id="open-cv-btn" class="btn-gold-sm">1-Page CV</button>
+        <button type="button" id="open-cv-btn" class="btn-gold-sm">View CV</button>
       </div>
     </div>
   </header>
@@ -226,8 +226,8 @@
         </a>
         <button type="button" class="contact-chip" id="open-cv-footer">
           <span class="chip-k">CURRICULUM VITAE</span>
-          <span class="chip-v">1-Page Software Eng CV</span>
-          <span class="chip-act">PRINT</span>
+          <span class="chip-v">Software Engineering CV</span>
+          <span class="chip-act">OPEN</span>
         </button>
       </div>
     </section>
@@ -253,151 +253,158 @@
     </div>
   </div>
 
-  <!-- Print-Ready 1-Page CV Modal -->
+  <!-- Modern UK Software Engineering CV Modal -->
   <div id="cv-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="cv-title" hidden>
     <div class="modal-card cv-paper">
       <div class="cv-toolbar no-print">
-        <span id="cv-title" class="kicker" style="color:#4b4943; margin:0;">INDUSTRY-STANDARD SWE CV · A4 SINGLE PAGE</span>
+        <span id="cv-title" class="kicker" style="color:#475569; margin:0;">KHALED ALMASHARQAH &middot; CURRICULUM VITAE</span>
         <div style="display:flex; gap:8px; flex-wrap:wrap;">
-          <a href="cv.html" target="_blank" rel="noopener noreferrer" class="btn-outline btn-sm" style="background:#ffffff; color:#141413; border-color:#c9c2b5;">Standalone Page &nearr;</a>
-          <a href="Khaled_Almasharqah_CV.pdf" download class="btn-outline btn-sm" style="background:#ffffff; color:#141413; border-color:#c9c2b5;">Download PDF</a>
+          <a href="cv.html" target="_blank" rel="noopener noreferrer" class="btn-outline btn-sm" style="background:#ffffff; color:#0f172a; border-color:#cbd5e1;">Standalone Page &nearr;</a>
+          <a href="Khaled_Almasharqah_CV.pdf" download class="btn-outline btn-sm" style="background:#ffffff; color:#0f172a; border-color:#cbd5e1;">Download PDF</a>
           <button type="button" id="print-cv-btn" class="btn-primary btn-sm">Print / Save PDF</button>
-          <button type="button" id="close-cv-btn" class="btn-outline btn-sm" style="background:#ffffff; color:#141413; border-color:#c9c2b5;">Close</button>
+          <button type="button" id="close-cv-btn" class="btn-outline btn-sm" style="background:#ffffff; color:#0f172a; border-color:#cbd5e1;">Close</button>
         </div>
       </div>
 
       <article class="cv-sheet">
-        <header class="cv-header-center">
-          <h1>Khaled Almasharqah</h1>
-          <div class="cv-contact-line">
-            <span>+44 7878 873206</span><span class="cv-sep">|</span>
-            <a href="mailto:almasharqahkhaled@gmail.com">almasharqahkhaled@gmail.com</a><span class="cv-sep">|</span>
-            <a href="https://khaledalm-06.github.io/" target="_blank" rel="noopener noreferrer">khaledalm-06.github.io</a><span class="cv-sep">|</span>
-            <a href="https://github.com/KhaledAlm-06" target="_blank" rel="noopener noreferrer">github.com/KhaledAlm-06</a>
+        <header class="cv-header">
+          <div class="cv-header-info">
+            <h1>Khaled Almasharqah</h1>
+            <p class="cv-subtitle">Third-Year Software Engineering Student &middot; Heriot-Watt University</p>
+            <div class="cv-contacts">
+              <span class="cv-pill">+44 7878 873206</span>
+              <a class="cv-pill" href="mailto:almasharqahkhaled@gmail.com">almasharqahkhaled@gmail.com</a>
+              <a class="cv-pill" href="https://khaledalm-06.github.io/" target="_blank" rel="noopener noreferrer">khaledalm-06.github.io</a>
+            </div>
           </div>
+          <img class="cv-portrait" src="assets/cv-portrait.jpg" alt="Khaled Almasharqah portrait" />
         </header>
+
+        <section class="cv-section">
+          <h2>Personal Summary</h2>
+          <p class="cv-summary">
+            Third-year Software Engineering student at Heriot-Watt University combining strong systems programming fundamentals with calm, frontline problem-solving in high-volume customer environments. Fluent in English and Arabic, seeking a 2027 software engineering internship or placement where I can contribute from day one.
+          </p>
+        </section>
 
         <section class="cv-section">
           <h2>Education</h2>
           <div class="cv-entry">
-            <div class="cv-subhead">
-              <strong>Heriot-Watt University</strong>
-              <strong class="cv-right">Sep 2024 &ndash; May 2029</strong>
+            <div class="cv-entry-head">
+              <span><span class="cv-entry-title">MEng Software Engineering (Year 3)</span> <span class="cv-entry-org">&middot; Heriot-Watt University</span></span>
+              <span class="cv-entry-date">2024 &ndash; 2029 (Expected)</span>
             </div>
-            <div class="cv-subhead">
-              <em>MEng Software Engineering (Year 3 Undergraduate)</em>
-              <em class="cv-right">Available for 2027 Internships &amp; Placements</em>
+            <p>Key Modules: C99 Systems Programming, Data Structures &amp; Algorithms, Software Design &amp; Validation, Relational Databases.</p>
+          </div>
+          <div class="cv-entry">
+            <div class="cv-entry-head">
+              <span><span class="cv-entry-title">Secondary Education (Highers)</span></span>
+              <span class="cv-entry-date">2022 &ndash; 2024</span>
+            </div>
+            <p>Higher Mathematics, Higher English, Higher Equivalent Arabic.</p>
+          </div>
+        </section>
+
+        <section class="cv-section">
+          <h2>Technical &amp; Core Skills</h2>
+          <div class="cv-skills-grid">
+            <div class="cv-skill-card">
+              <h3>Technical Stack</h3>
+              <p><strong>Languages:</strong> Python, Java, C (C99), JavaScript, SQL, PHP, HTML &amp; CSS</p>
+              <p><strong>Tools &amp; Workflow:</strong> Git, Linux CLI, Agile / Scrum, VS Code, Object-Oriented Design</p>
+            </div>
+            <div class="cv-skill-card">
+              <h3>Core Strengths</h3>
+              <p><strong>Problem Solving:</strong> Systems debugging, hardware/POS troubleshooting, algorithmic design</p>
+              <p><strong>Communication:</strong> Bilingual (English &amp; Arabic), team leadership, calm conflict resolution</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="cv-section">
+          <h2>Selected Projects</h2>
+          <div class="cv-entry">
+            <div class="cv-entry-head">
+              <span><span class="cv-entry-title">Multi-Modal Transport &amp; Route-Booking Platform</span> <span class="cv-entry-org">&middot; PHP, JavaScript, SQL, OpenStreetMap</span></span>
             </div>
             <ul class="cv-bullets">
-              <li><strong>Relevant Coursework:</strong> Hardware-Software Interface (C99, Pointers &amp; Manual Memory Management), Data Structures &amp; Algorithms, Software Design &amp; Validation, Concurrent &amp; Distributed Systems, Database Management Systems.</li>
-              <li><strong>Secondary Education &amp; Certifications (2022 &ndash; 2024):</strong> Higher Mathematics, Higher English, Higher Equivalent Arabic; Certified First Aider.</li>
+              <li>Built a full-stack journey planner and ticket-booking web app in a Stage 3 Agile Scrum team.</li>
+              <li>Integrated live OpenStreetMap routing with a relational SQL backend for schedules and fares.</li>
+            </ul>
+          </div>
+          <div class="cv-entry">
+            <div class="cv-entry-head">
+              <span><span class="cv-entry-title">Interactive 3D Renderer, 2D Physics Engine &amp; Portfolio</span> <span class="cv-entry-org">&middot; JavaScript, HTML5 Canvas</span></span>
+            </div>
+            <ul class="cv-bullets">
+              <li>Created a real-time 3D software rasterizer and 2D rigid-body physics engine running in the browser.</li>
+              <li>Built a custom Virtual DOM and state engine to power my interactive portfolio website.</li>
+            </ul>
+          </div>
+          <div class="cv-entry">
+            <div class="cv-entry-head">
+              <span><span class="cv-entry-title">Custom Language Model &amp; JVM Bytecode Compiler</span> <span class="cv-entry-org">&middot; Python, Java</span></span>
+            </div>
+            <ul class="cv-bullets">
+              <li>Implemented a GPT-style language model and automatic differentiation engine from scratch in Python.</li>
+              <li>Built a Java compiler that parses source code into executable JVM <code>.class</code> bytecode.</li>
             </ul>
           </div>
         </section>
 
         <section class="cv-section">
-          <h2>Technical Skills</h2>
-          <ul class="cv-skills-list">
-            <li><strong>Languages:</strong> Python, Java (JDK 21), C (C99), JavaScript (ES6+ / Node.js), SQL, PHP, HTML5, CSS3</li>
-            <li><strong>Systems &amp; Core Engineering:</strong> Compilers (ASTs, JVM Bytecode), ML Internals (Autograd, Self-Attention, BPE), 2D/3D Graphics &amp; Physics, Virtual DOM</li>
-            <li><strong>Developer Tools &amp; Practices:</strong> Git, Linux / POSIX CLI, Agile (Scrum), Object-Oriented Design, SQL Schema Design, Bilingual (English &amp; Arabic)</li>
-          </ul>
-        </section>
-
-        <section class="cv-section">
-          <h2>Technical Projects</h2>
-
+          <h2>Work Experience</h2>
           <div class="cv-entry">
-            <div class="cv-subhead">
-              <span><strong>GPT-2 Language Model &amp; Autograd Engine</strong> | <em>Python</em></span>
-              <a class="cv-proj-link" href="https://github.com/KhaledAlm-06/gpt-llm-from-scratch-python" target="_blank" rel="noopener noreferrer">github.com/KhaledAlm-06/gpt-llm-from-scratch-python</a>
+            <div class="cv-entry-head">
+              <span><span class="cv-entry-title">Customer Assistant</span> <span class="cv-entry-org">&middot; Vue Cinema</span></span>
+              <span class="cv-entry-date">Oct 2024 &ndash; Aug 2025</span>
             </div>
             <ul class="cv-bullets">
-              <li>Engineered a complete GPT-2 transformer architecture from first principles without PyTorch or NumPy, implementing Byte-Pair Encoding (BPE) subword tokenization with special-token splitting and vocabulary serialization.</li>
-              <li>Architected a dynamic reverse-mode automatic differentiation engine supporting DAG topological sorting and analytical backward passes across <code>MatMul</code>, <code>LayerNorm</code>, <code>GELU</code>, <code>Softmax</code>, and cross-entropy loss operations.</li>
-              <li>Implemented multi-head causal self-attention with upper-triangular future masking, residual pre-norm layers, positional embeddings, and autoregressive temperature/top-k token generation.</li>
+              <li>Delivered fast, composed guest service during peak weekends and sold-out screenings.</li>
+              <li>Troubleshot self-service ticketing kiosks and handheld scanners to keep queues moving.</li>
+              <li>Consistently met upselling targets for combo upgrades and premium seating with accurate till handling.</li>
             </ul>
           </div>
-
           <div class="cv-entry">
-            <div class="cv-subhead">
-              <span><strong>Enkel JVM Bytecode Compiler</strong> | <em>Java 21, JVM Bytecode</em></span>
-              <a class="cv-proj-link" href="https://github.com/KhaledAlm-06/enkel-jvm-bytecode-compiler-java" target="_blank" rel="noopener noreferrer">github.com/KhaledAlm-06/enkel-jvm-bytecode-compiler-java</a>
+            <div class="cv-entry-head">
+              <span><span class="cv-entry-title">Front of House</span> <span class="cv-entry-org">&middot; Pepe&rsquo;s Grill</span></span>
+              <span class="cv-entry-date">Aug 2024 &ndash; Nov 2024</span>
             </div>
             <ul class="cv-bullets">
-              <li>Built an end-to-end recursive-descent compiler in Java 21 that lexes and parses source programs into a statically-typed Abstract Syntax Tree (AST) with lexical block scoping and local-variable slot indexing.</li>
-              <li>Implemented a binary <code>0xCAFEBABE</code> <code>.class</code> file serializer from scratch that constructs the JVM Constant Pool (<code>UTF8</code>, <code>Class</code>, <code>NameAndType</code>, <code>Methodref</code>), method descriptors, and <code>Code</code> attributes with zero external bytecode libraries.</li>
-              <li>Engineered 16-bit signed relative jump backpatching (<code>if_icmple</code>, <code>goto</code>) and operand-stack depth calculation, verifying compiled <code>.class</code> binaries (including recursive factorial <code>fact(6)=720</code>) directly on the JDK 21 HotSpot VM.</li>
-            </ul>
-          </div>
-
-          <div class="cv-entry">
-            <div class="cv-subhead">
-              <span><strong>3D Software Rasterizer, 2D Physics &amp; Virtual DOM</strong> | <em>JavaScript, HTML5 Canvas</em></span>
-              <a class="cv-proj-link" href="https://khaledalm-06.github.io/" target="_blank" rel="noopener noreferrer">khaledalm-06.github.io</a>
-            </div>
-            <ul class="cv-bullets">
-              <li>Developed a zero-WebGL 3D software rendering pipeline implementing 4&times;4 homogeneous projection matrices, perspective division, surface-normal backface culling, painter&rsquo;s Z-sorting, and Gouraud shading at 60 FPS.</li>
-              <li>Built a 2D rigid-body physics engine featuring Separating Axis Theorem (SAT) collision detection, impulse-based restitution and Coulomb friction solvers, and iterative Verlet distance-constraint relaxation.</li>
-              <li>Implemented a custom Virtual DOM tree reconciler and Redux-style unidirectional state store from scratch to drive reactive UI rendering and sub-millisecond diff telemetry on my live portfolio.</li>
-            </ul>
-          </div>
-
-          <div class="cv-entry">
-            <div class="cv-subhead">
-              <span><strong>Multi-Modal Transport Booking Platform</strong> | <em>PHP, JS, SQL, OpenStreetMap, Scrum</em></span>
-              <em class="cv-right">Heriot-Watt Stage 3 Group Project</em>
-            </div>
-            <ul class="cv-bullets">
-              <li>Collaborated in a Stage 3 Agile Scrum engineering team to design, implement, and validate a full-stack multi-modal journey planning and ticket-booking web application across iterative sprints.</li>
-              <li>Integrated OpenStreetMap geospatial map rendering and multi-leg route calculation with a normalized relational SQL database managing transit schedules, fare rules, and user reservations.</li>
-              <li>Participated in sprint planning, peer code reviews, requirements validation, and end-to-end integration testing.</li>
+              <li>Managed POS transactions, online orders, and counter service during high-turnaround shifts.</li>
+              <li>Coordinated between kitchen and front-of-house teams and helped train new staff.</li>
             </ul>
           </div>
         </section>
 
         <section class="cv-section">
-          <h2>Work &amp; Leadership Experience</h2>
-
+          <h2>Volunteering &amp; Leadership</h2>
           <div class="cv-entry">
-            <div class="cv-subhead">
-              <strong>Customer Assistant &amp; Floor Technical Support</strong>
-              <strong class="cv-right">Oct 2024 &ndash; Aug 2025</strong>
-            </div>
-            <div class="cv-subhead">
-              <em>Vue Cinema</em>
+            <div class="cv-entry-head">
+              <span><span class="cv-entry-title">Youth Mentor &amp; Scout Leader</span> <span class="cv-entry-org">&middot; Community Youth &amp; Scout Programmes</span></span>
+              <span class="cv-entry-date">Aug 2023 &ndash; May 2024</span>
             </div>
             <ul class="cv-bullets">
-              <li>Performed first-line hardware and software diagnostics on self-service ticketing kiosks, POS terminals, and optical ticket scanners during peak sold-out screenings, minimizing equipment downtime and queue bottlenecks.</li>
-              <li>Processed high-volume cash and card transactions with zero reconciliation discrepancies while resolving time-sensitive customer booking and seating escalations calmly on the floor.</li>
+              <li>Led weekly digital literacy workshops and outdoor team-building challenges for teens aged 13&ndash;17.</li>
+              <li>Planned group events that built confidence, teamwork, and public speaking skills.</li>
             </ul>
           </div>
-
           <div class="cv-entry">
-            <div class="cv-subhead">
-              <strong>Front of House Team Member</strong>
-              <strong class="cv-right">Aug 2024 &ndash; Nov 2024</strong>
-            </div>
-            <div class="cv-subhead">
-              <em>Pepe&rsquo;s Grill</em>
+            <div class="cv-entry-head">
+              <span><span class="cv-entry-title">Bilingual Teaching Assistant</span> <span class="cv-entry-org">&middot; Arabic &amp; English Support</span></span>
+              <span class="cv-entry-date">Sep 2021 &ndash; Jul 2024</span>
             </div>
             <ul class="cv-bullets">
-              <li>Coordinated real-time order throughput between front-of-house POS terminals and kitchen staff during high-volume evening shifts, maintaining rapid service turnaround and supporting new-hire onboarding.</li>
+              <li>Assisted teachers in Arabic and English classes and tracked student progress data.</li>
             </ul>
           </div>
+        </section>
 
-          <div class="cv-entry">
-            <div class="cv-subhead">
-              <strong>Youth Mentor, Scout Leader &amp; Bilingual Teaching Assistant</strong>
-              <strong class="cv-right">Sep 2021 &ndash; Jul 2024</strong>
-            </div>
-            <div class="cv-subhead">
-              <em>Community Youth &amp; Education Programmes</em>
-            </div>
-            <ul class="cv-bullets">
-              <li>Led weekly digital literacy and personal development workshops for cohorts of 13&ndash;17-year-old students and organized structured outdoor Scout problem-solving challenges.</li>
-              <li>Supported bilingual (English and Arabic) classroom instruction, adapting explanations for diverse learners and tracking student academic progress.</li>
-            </ul>
+        <section class="cv-section">
+          <h2>Certifications &amp; Languages</h2>
+          <div class="cv-footer-row">
+            <div><strong>Languages:</strong> English (Fluent) &middot; Arabic (Fluent)</div>
+            <div><strong>Certifications:</strong> First Aid Certified &middot; Barista Trained</div>
           </div>
         </section>
       </article>

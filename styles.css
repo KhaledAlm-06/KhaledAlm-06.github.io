@@ -1039,16 +1039,16 @@ body {
   color: var(--gold-soft);
 }
 
-/* Printable CV (Jake's Resume LaTeX Standard) */
+/* Modern Clean UK Software Engineering CV */
 .cv-paper {
   background: #ffffff;
-  color: #000000;
+  color: #1e293b;
   max-width: 860px;
 }
 
 .cv-toolbar {
-  background: #f3f1ea;
-  border-bottom: 1px solid #d6d0c4;
+  background: #f8fafc;
+  border-bottom: 1px solid #e2e8f0;
   padding: 12px 22px;
   display: flex;
   justify-content: space-between;
@@ -1058,120 +1058,191 @@ body {
 }
 
 .cv-sheet {
-  padding: 26px 34px;
-  font-family: "Charter", "Bitstream Charter", "Sitka Text", "Cambria", "Georgia", "Times New Roman", serif;
-  font-size: 9.4pt;
-  line-height: 1.28;
-  color: #000000;
+  padding: 34px 40px;
+  font-family: "Inter", "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 10.5pt;
+  line-height: 1.55;
+  color: #1e293b;
 }
 
 .cv-sheet a {
-  color: #000000;
+  color: #1e3a5f;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.cv-sheet a:hover {
   text-decoration: underline;
-  text-decoration-thickness: 0.6px;
-  text-underline-offset: 2px;
 }
 
-.cv-sheet code {
-  font-family: var(--mono);
-  font-size: 0.87em;
+.cv-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 16px;
+  margin-bottom: 18px;
+  border-bottom: 2px solid #1e3a5f;
 }
 
-.cv-header-center {
-  text-align: center;
-  margin-bottom: 6px;
-}
-
-.cv-header-center h1 {
-  margin: 0 0 3px;
+.cv-header-info h1 {
+  margin: 0 0 4px;
   font-family: inherit;
-  font-size: 20.5pt;
+  font-size: 24pt;
   font-weight: 700;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  line-height: 1.08;
-  color: #000000;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  color: #0f172a;
 }
 
-.cv-contact-line {
-  font-size: 9.1pt;
-  line-height: 1.3;
-  color: #000000;
+.cv-subtitle {
+  margin: 0 0 10px;
+  font-size: 11.5pt;
+  font-weight: 500;
+  color: #334155;
 }
 
-.cv-sep {
-  margin: 0 5px;
+.cv-contacts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 9.5pt;
+  color: #475569;
+}
+
+.cv-pill {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 3px 9px;
+  color: #0f172a;
+  white-space: nowrap;
+}
+
+.cv-portrait {
+  width: 96px;
+  height: 112px;
+  border-radius: 12px;
+  object-fit: cover;
+  object-position: center 22%;
+  border: 2px solid #e2e8f0;
+  flex-shrink: 0;
+  display: block;
 }
 
 .cv-section {
-  margin-top: 7px;
+  margin-bottom: 18px;
+}
+
+.cv-section:last-child {
+  margin-bottom: 0;
 }
 
 .cv-section h2 {
-  margin: 0 0 4px;
-  padding-bottom: 1.5px;
+  margin: 0 0 10px;
+  padding-bottom: 4px;
   font-family: inherit;
-  font-size: 10.6pt;
+  font-size: 11.5pt;
   font-weight: 700;
-  font-variant: small-caps;
   letter-spacing: 0.04em;
-  border-bottom: 1px solid #000000;
-  color: #000000;
-  line-height: 1.15;
+  text-transform: uppercase;
+  color: #1e3a5f;
+  border-bottom: 1.5px solid #e2e8f0;
+}
+
+.cv-summary {
+  margin: 0;
+  color: #1e293b;
 }
 
 .cv-entry {
-  margin-bottom: 4.5px;
+  margin-bottom: 12px;
+  break-inside: avoid;
+  page-break-inside: avoid;
 }
 
 .cv-entry:last-child {
   margin-bottom: 0;
 }
 
-.cv-subhead {
+.cv-entry-head {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  gap: 10px;
-  font-size: 9.4pt;
-  line-height: 1.24;
+  gap: 12px;
+  margin-bottom: 3px;
 }
 
-.cv-subhead + .cv-subhead {
-  margin-top: 0.5px;
+.cv-entry-title {
+  font-weight: 700;
+  color: #0f172a;
 }
 
-.cv-right {
-  text-align: right;
+.cv-entry-org {
+  color: #475569;
+  font-weight: 500;
+}
+
+.cv-entry-date {
+  font-size: 9.5pt;
+  font-weight: 500;
+  color: #475569;
   white-space: nowrap;
   flex-shrink: 0;
 }
 
-.cv-proj-link {
-  font-size: 8.8pt;
-  white-space: nowrap;
-  flex-shrink: 0;
+.cv-entry p {
+  margin: 2px 0 0;
+  color: #1e293b;
 }
 
 .cv-bullets {
-  margin: 2px 0 3px;
-  padding-left: 16px;
+  margin: 4px 0 0;
+  padding-left: 18px;
   list-style-type: disc;
 }
 
 .cv-bullets li {
-  margin-bottom: 1.5px;
-  text-align: left;
+  margin-bottom: 3px;
 }
 
-.cv-skills-list {
-  margin: 2px 0 2px;
-  padding-left: 8px;
-  list-style-type: none;
+.cv-skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
 }
 
-.cv-skills-list li {
-  margin-bottom: 2px;
+.cv-skill-card {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 10px 13px;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.cv-skill-card h3 {
+  margin: 0 0 6px;
+  font-size: 10pt;
+  font-weight: 700;
+  color: #1e3a5f;
+}
+
+.cv-skill-card p {
+  margin: 0 0 4px;
+  font-size: 9.7pt;
+  line-height: 1.48;
+}
+
+.cv-skill-card p:last-child {
+  margin-bottom: 0;
+}
+
+.cv-footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 28px;
+  font-size: 10pt;
 }
 
 .toast {
@@ -1201,18 +1272,21 @@ body {
   .span-7, .span-5, .span-6 { grid-column: span 12; }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 720px) {
   .contact-cards { grid-template-columns: 1fr; }
-  .cv-subhead { flex-direction: column; gap: 1px; }
-  .cv-right, .cv-proj-link { text-align: left; white-space: normal; }
+  .cv-header { flex-direction: column-reverse; align-items: flex-start; }
+  .cv-entry-head { flex-direction: column; gap: 2px; }
+  .cv-skills-grid { grid-template-columns: 1fr; }
 }
 
 @media print {
-  @page { size: A4 portrait; margin: 8.5mm 11mm; }
-  body { background: #fff; color: #000; }
+  @page { size: A4 portrait; margin: 16mm 18mm; }
+  body { background: #fff; color: #000; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   .topbar, .shell, .footer-bar, .ambient-glow, .grid-backdrop, .no-print, .toast { display: none !important; }
   .modal-backdrop { position: static; background: #fff; padding: 0; display: block !important; }
   .modal-card { box-shadow: none; max-width: 100%; border-radius: 0; }
-  .cv-sheet { padding: 0; font-size: 9.2pt; line-height: 1.25; }
-  .cv-subhead { flex-direction: row !important; justify-content: space-between; }
+  .cv-sheet { padding: 0; font-size: 10.5pt; line-height: 1.55; }
+  .cv-header { flex-direction: row !important; justify-content: space-between; align-items: center; }
+  .cv-entry-head { flex-direction: row !important; justify-content: space-between; }
+  .cv-skills-grid { grid-template-columns: 1fr 1fr !important; }
 }
