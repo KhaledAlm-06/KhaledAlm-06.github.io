@@ -750,26 +750,31 @@ function initModalsAndExtras() {
   const closeRepos = document.getElementById("close-repos-btn");
   const filterBar = document.getElementById("repos-filter-bar");
   const reposGrid = document.getElementById("repos-grid");
+  const releasedPool = LAB_PROJECTS.filter((p) => p.released);
   let activeLang = "All";
+
+  if (openRepos) {
+    openRepos.textContent = `Open-Source Repos (${releasedPool.length}) \u2197`;
+  }
 
   const drawRepos = () => {
     if (!reposGrid) return;
     reposGrid.innerHTML = "";
-    const filtered = activeLang === "All" ? LAB_PROJECTS.slice() : LAB_PROJECTS.filter((p) => p.lang === activeLang);
-    filtered.sort((a, b) => (b.released ? 1 : 0) - (a.released ? 1 : 0) || a.id - b.id);
+    const filtered = activeLang === "All"
+      ? releasedPool.slice()
+      : releasedPool.filter((p) => p.lang === activeLang);
+    filtered.sort((a, b) => a.id - b.id);
     filtered.forEach((p) => {
       const el = document.createElement("div");
       el.className = "repo-tile";
-      const badgeOrLink = p.released
-        ? `<a class="mini-link" href="${p.url}" target="_blank" rel="noopener noreferrer">Live Repo &nearr;</a>`
-        : `<span class="mini-link queued-badge">Queued Release</span>`;
-      el.innerHTML = `<div><span>#${String(p.id).padStart(3, "0")} · ${p.lang.toUpperCase()}</span><h4>${p.title}</h4></div>${badgeOrLink}`;
+      el.innerHTML = `<div><span>#${String(p.id).padStart(3, "0")} · ${p.lang.toUpperCase()}</span><h4>${p.title}</h4></div><a class="mini-link" href="${p.url}" target="_blank" rel="noopener noreferrer">GitHub &nearr;</a>`;
       reposGrid.appendChild(el);
     });
   };
 
   if (filterBar) {
-    ["All", "Python", "JavaScript", "Node.js", "Java", "OCaml", "Nim"].forEach((lang) => {
+    const langs = ["All", ...new Set(releasedPool.map((p) => p.lang))];
+    langs.forEach((lang) => {
       const b = document.createElement("button");
       b.type = "button";
       b.className = "ctrl-btn" + (lang === "All" ? " active" : "");
