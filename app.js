@@ -145,32 +145,32 @@ const BENTO_FRAMES = [
 ];
 
 const LAB_PROJECTS = [
-  { id: 4, title: "3D Raytracer & Rasterizer", lang: "JavaScript", url: "https://github.com/KhaledAlm-06/3d-raytracer-and-rasterizer-js" },
-  { id: 6, title: "GPT-2 Language Model (BPE + Autograd)", lang: "Python", url: "https://github.com/KhaledAlm-06/gpt-llm-from-scratch-python" },
-  { id: 7, title: "GRPO Reasoning LLM + Distillation", lang: "Python", url: "https://github.com/KhaledAlm-06/reasoning-llm-grpo-from-scratch" },
-  { id: 8, title: "DDPM Diffusion Image Generator", lang: "Python", url: "https://github.com/KhaledAlm-06/ddpm-diffusion-model-from-scratch" },
-  { id: 10, title: "Hybrid BM25 + Vector RAG Search", lang: "Python", url: "https://github.com/KhaledAlm-06/hybrid-rag-search-engine-python" },
-  { id: 11, title: "Sparse Autoencoders (Interpretability)", lang: "Python", url: "https://github.com/KhaledAlm-06/sparse-autoencoder-interpretability" },
-  { id: 15, title: "Asyncio BitTorrent Client", lang: "Python", url: "https://github.com/KhaledAlm-06/async-bittorrent-client-python" },
-  { id: 25, title: "secp256k1 ECDSA PoW Blockchain", lang: "Python", url: "https://github.com/KhaledAlm-06/secp256k1-pow-blockchain-python" },
-  { id: 41, title: "DBDB Copy-on-Write Storage Engine", lang: "Python", url: "https://github.com/KhaledAlm-06/cow-btree-storage-engine-python" },
-  { id: 42, title: "Multi-Threaded RESP2 Redis Server", lang: "Python", url: "https://github.com/KhaledAlm-06/build-your-own-x-portfolio/tree/main/projects/08-database/042-python-write-your-own-miniature-redis-with-python" },
-  { id: 43, title: "Kafka Segmented Commit-Log Broker", lang: "Java", url: "https://github.com/KhaledAlm-06/build-your-own-x-portfolio/tree/main/projects/09-distributed-systems/043-java-building-your-own-kafka-like-system-from-scratch-a-step-by-s" },
-  { id: 44, title: "Linux Container Runtime (OverlayFS)", lang: "Python", url: "https://github.com/KhaledAlm-06/build-your-own-x-portfolio/tree/main/projects/10-docker/044-python-a-workshop-on-linux-containers-rebuild-docker-from-scratch" },
-  { id: 46, title: "GameBoy LR35902 CPU & Scanline PPU", lang: "JavaScript", url: "https://github.com/KhaledAlm-06/build-your-own-x-portfolio/tree/main/projects/11-emulator-virtual-machine/046-javascript-gameboy-emulation-in-javascript" },
-  { id: 60, title: "React Fiber Reconciler + Hooks", lang: "JavaScript", url: "https://github.com/KhaledAlm-06/build-your-own-x-portfolio/tree/main/projects/12-front-end-framework-library/060-javascript-build-your-own-react" },
-  { id: 65, title: "Java 3D Game Engine & Barycentric Rasterizer", lang: "Java", url: "https://github.com/KhaledAlm-06/build-your-own-x-portfolio/tree/main/projects/13-game/065-java-3d-game-development-with-lwjgl-3" },
-  { id: 78, title: "Git VCS Internals (wyag)", lang: "Python", url: "https://github.com/KhaledAlm-06/build-your-own-x-portfolio/tree/main/projects/14-git/078-python-write-yourself-a-git" },
-  { id: 80, title: "Virtual Layer-2 VPN Switch", lang: "Python", url: "https://github.com/KhaledAlm-06/build-your-own-x-portfolio/tree/main/projects/15-network-stack/080-python-build-your-own-vpn-virtual-switch" },
-  { id: 84, title: "PyTorch-Style Strided Tensor Autograd", lang: "Python", url: "https://github.com/KhaledAlm-06/build-your-own-x-portfolio/tree/main/projects/16-neural-network/084-python-build-deep-learning-from-scratch-reimplement-pytorch-interna" },
-  { id: 93, title: "2D Rigid-Body SAT Physics Engine", lang: "JavaScript", url: "https://github.com/KhaledAlm-06/build-your-own-x-portfolio/tree/main/projects/17-physics-engine/093-javascript-how-physics-engines-work" },
-  { id: 96, title: "Bolt OOP & Capability Compiler", lang: "OCaml", url: "https://github.com/KhaledAlm-06/build-your-own-x-portfolio/tree/main/projects/18-programming-language/096-ocaml-how-i-wrote-my-own-proper-programming-language-in-ocaml-and" },
-  { id: 98, title: "Enkel JVM Bytecode Emitter", lang: "Java", url: "https://github.com/KhaledAlm-06/build-your-own-x-portfolio/tree/main/projects/18-programming-language/098-java-creating-jvm-language" },
-  { id: 104, title: "C-to-x86-64 Assembly Compiler", lang: "OCaml", url: "https://github.com/KhaledAlm-06/build-your-own-x-portfolio/tree/main/projects/18-programming-language/104-ocaml-writing-a-c-compiler" },
-  { id: 106, title: "Python 3.15 Bytecode VM", lang: "Python", url: "https://github.com/KhaledAlm-06/build-your-own-x-portfolio/tree/main/projects/18-programming-language/106-python-a-python-interpreter-written-in-python" },
-  { id: 129, title: "Web Browser Layout & CSS Cascade Engine", lang: "Python", url: "https://github.com/KhaledAlm-06/build-your-own-x-portfolio/tree/main/projects/24-web-browser/129-python-browser-engineering" },
-  { id: 147, title: "Incremental DAG Build System", lang: "Nim", url: "https://github.com/KhaledAlm-06/build-your-own-x-portfolio/tree/main/projects/26-uncategorized/147-nim-writing-a-build-system" },
-  { id: 157, title: "YATA CRDT Sync Engine", lang: "Node.js", url: "https://github.com/KhaledAlm-06/build-your-own-x-portfolio/tree/main/projects/26-uncategorized/157-nodejs-build-a-synchronization-engine-with-nodejs-and-y-js" }
+  { id: 4, title: "3D Raytracer & Rasterizer", lang: "JavaScript", url: "https://github.com/KhaledAlm-06/3d-raytracer-and-rasterizer-js", released: true },
+  { id: 6, title: "GPT-2 Language Model (BPE + Autograd)", lang: "Python", url: "https://github.com/KhaledAlm-06/gpt-llm-from-scratch-python", released: true },
+  { id: 7, title: "GRPO Reasoning LLM + Distillation", lang: "Python", url: "https://github.com/KhaledAlm-06/reasoning-llm-grpo-from-scratch", released: false },
+  { id: 8, title: "DDPM Diffusion Image Generator", lang: "Python", url: "https://github.com/KhaledAlm-06/ddpm-diffusion-model-from-scratch", released: false },
+  { id: 10, title: "Hybrid BM25 + Vector RAG Search", lang: "Python", url: "https://github.com/KhaledAlm-06/hybrid-rag-search-engine-python", released: false },
+  { id: 11, title: "Sparse Autoencoders (Interpretability)", lang: "Python", url: "https://github.com/KhaledAlm-06/sparse-autoencoder-interpretability", released: false },
+  { id: 15, title: "Asyncio BitTorrent Client", lang: "Python", url: "https://github.com/KhaledAlm-06/async-bittorrent-client-python", released: false },
+  { id: 25, title: "secp256k1 ECDSA PoW Blockchain", lang: "Python", url: "https://github.com/KhaledAlm-06/secp256k1-pow-blockchain-python", released: false },
+  { id: 41, title: "DBDB Copy-on-Write Storage Engine", lang: "Python", url: "https://github.com/KhaledAlm-06/cow-btree-storage-engine-python", released: false },
+  { id: 42, title: "Multi-Threaded RESP2 Redis Server", lang: "Python", url: "https://github.com/KhaledAlm-06/redis-resp2-server-from-scratch", released: false },
+  { id: 43, title: "Kafka Segmented Commit-Log Broker", lang: "Java", url: "https://github.com/KhaledAlm-06/distributed-kafka-broker-java", released: false },
+  { id: 44, title: "Linux Container Runtime (OverlayFS)", lang: "Python", url: "https://github.com/KhaledAlm-06/linux-container-runtime-python", released: false },
+  { id: 46, title: "GameBoy LR35902 CPU & Scanline PPU", lang: "JavaScript", url: "https://github.com/KhaledAlm-06/gameboy-emulator-js", released: false },
+  { id: 60, title: "React Fiber Reconciler + Hooks", lang: "JavaScript", url: "https://github.com/KhaledAlm-06/react-fiber-reconciler-from-scratch", released: true },
+  { id: 65, title: "Java 3D Game Engine & Barycentric Rasterizer", lang: "Java", url: "https://github.com/KhaledAlm-06/java-3d-game-engine-rasterizer", released: false },
+  { id: 78, title: "Git VCS Internals (wyag)", lang: "Python", url: "https://github.com/KhaledAlm-06/git-vcs-from-scratch-python", released: false },
+  { id: 80, title: "Virtual Layer-2 VPN Switch", lang: "Python", url: "https://github.com/KhaledAlm-06/virtual-l2-vpn-switch-python", released: false },
+  { id: 84, title: "PyTorch-Style Strided Tensor Autograd", lang: "Python", url: "https://github.com/KhaledAlm-06/pytorch-autograd-engine-from-scratch", released: false },
+  { id: 93, title: "2D Rigid-Body SAT Physics Engine", lang: "JavaScript", url: "https://github.com/KhaledAlm-06/2d-rigid-body-physics-engine-js", released: true },
+  { id: 96, title: "Bolt OOP & Capability Compiler", lang: "OCaml", url: "https://github.com/KhaledAlm-06/bolt-llvm-compiler-ocaml", released: false },
+  { id: 98, title: "Enkel JVM Bytecode Emitter", lang: "Java", url: "https://github.com/KhaledAlm-06/enkel-jvm-bytecode-compiler-java", released: true },
+  { id: 104, title: "C-to-x86-64 Assembly Compiler", lang: "OCaml", url: "https://github.com/KhaledAlm-06/c-to-x86-64-compiler-ocaml", released: false },
+  { id: 106, title: "Python 3.15 Bytecode VM", lang: "Python", url: "https://github.com/KhaledAlm-06/python-bytecode-vm-byterun", released: false },
+  { id: 129, title: "Web Browser Layout & CSS Cascade Engine", lang: "Python", url: "https://github.com/KhaledAlm-06/web-browser-engine-from-scratch", released: false },
+  { id: 147, title: "Incremental DAG Build System", lang: "Nim", url: "https://github.com/KhaledAlm-06/dag-incremental-build-system-nim", released: false },
+  { id: 157, title: "YATA CRDT Sync Engine", lang: "Node.js", url: "https://github.com/KhaledAlm-06/yata-crdt-sync-engine-nodejs", released: false }
 ];
 
 /* ============================================================================
@@ -275,13 +275,27 @@ function renderBentoAndTelemetry(state) {
         h("span", null, "ACTION: ", h("span", { className: "act-val" }, state.lastAction))
       ),
       h(
-        "button",
-        {
-          type: "button",
-          className: "ctrl-btn",
-          onClick: () => store.dispatch({ type: "TOGGLE_VDOM_TREE" })
-        },
-        state.showVNodeTree ? "Hide VNode Tree" : "Inspect VNode Tree"
+        "div",
+        { className: "vdom-actions" },
+        h(
+          "a",
+          {
+            className: "mini-link",
+            href: "https://github.com/KhaledAlm-06/react-fiber-reconciler-from-scratch",
+            target: "_blank",
+            rel: "noopener noreferrer"
+          },
+          "MiniVDOM Repo \u2197"
+        ),
+        h(
+          "button",
+          {
+            type: "button",
+            className: "ctrl-btn",
+            onClick: () => store.dispatch({ type: "TOGGLE_VDOM_TREE" })
+          },
+          state.showVNodeTree ? "Hide VNode Tree" : "Inspect VNode Tree"
+        )
       )
     ),
     state.showVNodeTree ? h("pre", { className: "vdom-tree-box" }, vnodeSnapshot) : null
@@ -640,7 +654,18 @@ function initInspectorWidget() {
     { op: "15: imul ; ireturn", stack: "return 720 (PASS)" }
   ];
 
+  const repoLink = document.getElementById("engine3-repo-link");
+
   const render = (state) => {
+    if (repoLink) {
+      if (state.inspectorTab === "attention") {
+        repoLink.href = "https://github.com/KhaledAlm-06/gpt-llm-from-scratch-python";
+        repoLink.textContent = "GPT-2 Repo \u2197";
+      } else {
+        repoLink.href = "https://github.com/KhaledAlm-06/enkel-jvm-bytecode-compiler-java";
+        repoLink.textContent = "JVM Repo \u2197";
+      }
+    }
     box.innerHTML = "";
     if (state.inspectorTab === "attention") {
       const tokRow = document.createElement("div");
@@ -730,11 +755,15 @@ function initModalsAndExtras() {
   const drawRepos = () => {
     if (!reposGrid) return;
     reposGrid.innerHTML = "";
-    const items = activeLang === "All" ? LAB_PROJECTS : LAB_PROJECTS.filter((p) => p.lang === activeLang);
-    items.forEach((p) => {
+    const filtered = activeLang === "All" ? LAB_PROJECTS.slice() : LAB_PROJECTS.filter((p) => p.lang === activeLang);
+    filtered.sort((a, b) => (b.released ? 1 : 0) - (a.released ? 1 : 0) || a.id - b.id);
+    filtered.forEach((p) => {
       const el = document.createElement("div");
       el.className = "repo-tile";
-      el.innerHTML = `<div><span>#${String(p.id).padStart(3, "0")} · ${p.lang.toUpperCase()}</span><h4>${p.title}</h4></div><a class="mini-link" href="${p.url}" target="_blank" rel="noopener noreferrer">GitHub &nearr;</a>`;
+      const badgeOrLink = p.released
+        ? `<a class="mini-link" href="${p.url}" target="_blank" rel="noopener noreferrer">Live Repo &nearr;</a>`
+        : `<span class="mini-link queued-badge">Queued Release</span>`;
+      el.innerHTML = `<div><span>#${String(p.id).padStart(3, "0")} · ${p.lang.toUpperCase()}</span><h4>${p.title}</h4></div>${badgeOrLink}`;
       reposGrid.appendChild(el);
     });
   };
