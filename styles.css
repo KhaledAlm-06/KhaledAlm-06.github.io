@@ -1039,10 +1039,11 @@ body {
   color: var(--gold-soft);
 }
 
-/* Printable CV */
+/* Printable CV (Jake's Resume LaTeX Standard) */
 .cv-paper {
   background: #ffffff;
-  color: #141413;
+  color: #000000;
+  max-width: 860px;
 }
 
 .cv-toolbar {
@@ -1052,115 +1053,125 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
 }
 
 .cv-sheet {
-  padding: 28px 36px;
-  font-size: 0.855rem;
-  line-height: 1.44;
-  color: #1c1b19;
+  padding: 26px 34px;
+  font-family: "Charter", "Bitstream Charter", "Sitka Text", "Cambria", "Georgia", "Times New Roman", serif;
+  font-size: 9.4pt;
+  line-height: 1.28;
+  color: #000000;
 }
 
-.cv-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 16px;
-  border-bottom: 2px solid #141413;
-  padding-bottom: 10px;
-  margin-bottom: 12px;
+.cv-sheet a {
+  color: #000000;
+  text-decoration: underline;
+  text-decoration-thickness: 0.6px;
+  text-underline-offset: 2px;
 }
 
-.cv-header h1 {
-  font-family: var(--display);
-  font-size: 1.65rem;
-  letter-spacing: -0.02em;
-  margin: 0 0 2px;
-  color: #111110;
+.cv-sheet code {
+  font-family: var(--mono);
+  font-size: 0.87em;
 }
 
-.cv-sub {
-  margin: 0;
-  color: #4b4943;
-  font-weight: 600;
-  font-size: 0.88rem;
+.cv-header-center {
+  text-align: center;
+  margin-bottom: 6px;
 }
 
-.cv-meta {
-  text-align: right;
-  font-size: 0.78rem;
-  line-height: 1.45;
-  color: #3f3d38;
-  flex-shrink: 0;
+.cv-header-center h1 {
+  margin: 0 0 3px;
+  font-family: inherit;
+  font-size: 20.5pt;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  line-height: 1.08;
+  color: #000000;
 }
 
-.cv-meta a {
-  color: #141413;
-  text-decoration: none;
-  border-bottom: 1px solid #d6d0c4;
+.cv-contact-line {
+  font-size: 9.1pt;
+  line-height: 1.3;
+  color: #000000;
 }
 
-.nowrap {
-  white-space: nowrap;
+.cv-sep {
+  margin: 0 5px;
 }
 
-.cv-sec {
-  margin-bottom: 11px;
+.cv-section {
+  margin-top: 7px;
 }
 
-.cv-sec:last-child {
+.cv-section h2 {
+  margin: 0 0 4px;
+  padding-bottom: 1.5px;
+  font-family: inherit;
+  font-size: 10.6pt;
+  font-weight: 700;
+  font-variant: small-caps;
+  letter-spacing: 0.04em;
+  border-bottom: 1px solid #000000;
+  color: #000000;
+  line-height: 1.15;
+}
+
+.cv-entry {
+  margin-bottom: 4.5px;
+}
+
+.cv-entry:last-child {
   margin-bottom: 0;
 }
 
-.cv-sec h2 {
-  font-family: var(--mono);
-  font-size: 0.7rem;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-  color: #be123c;
-  border-bottom: 1px solid #e4dfd5;
-  padding-bottom: 3px;
-  margin: 0 0 6px;
-}
-
-.cv-sec p {
-  margin: 0 0 4px;
-}
-
-.cv-sec ul {
-  margin: 2px 0 5px;
-  padding-left: 17px;
-}
-
-.cv-sec li {
-  margin-bottom: 2px;
-}
-
-.cv-skills-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 4px;
-}
-
-.cv-proj-meta {
-  font-family: var(--mono);
-  font-size: 0.72rem;
-  color: #5b5851;
-}
-
-.cv-row {
+.cv-subhead {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   gap: 10px;
-  margin-top: 5px;
+  font-size: 9.4pt;
+  line-height: 1.24;
 }
 
-.cv-row span {
-  font-family: var(--mono);
-  font-size: 0.72rem;
-  color: #5b5851;
+.cv-subhead + .cv-subhead {
+  margin-top: 0.5px;
+}
+
+.cv-right {
+  text-align: right;
   white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.cv-proj-link {
+  font-size: 8.8pt;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.cv-bullets {
+  margin: 2px 0 3px;
+  padding-left: 16px;
+  list-style-type: disc;
+}
+
+.cv-bullets li {
+  margin-bottom: 1.5px;
+  text-align: left;
+}
+
+.cv-skills-list {
+  margin: 2px 0 2px;
+  padding-left: 8px;
+  list-style-type: none;
+}
+
+.cv-skills-list li {
+  margin-bottom: 2px;
 }
 
 .toast {
@@ -1190,17 +1201,18 @@ body {
   .span-7, .span-5, .span-6 { grid-column: span 12; }
 }
 
-@media (max-width: 580px) {
+@media screen and (max-width: 640px) {
   .contact-cards { grid-template-columns: 1fr; }
-  .cv-header { flex-direction: column; }
-  .cv-meta { text-align: left; }
+  .cv-subhead { flex-direction: column; gap: 1px; }
+  .cv-right, .cv-proj-link { text-align: left; white-space: normal; }
 }
 
 @media print {
-  @page { size: A4; margin: 11mm 13mm; }
+  @page { size: A4 portrait; margin: 8.5mm 11mm; }
   body { background: #fff; color: #000; }
   .topbar, .shell, .footer-bar, .ambient-glow, .grid-backdrop, .no-print, .toast { display: none !important; }
   .modal-backdrop { position: static; background: #fff; padding: 0; display: block !important; }
   .modal-card { box-shadow: none; max-width: 100%; border-radius: 0; }
-  .cv-sheet { padding: 0; font-size: 9.6pt; line-height: 1.38; }
+  .cv-sheet { padding: 0; font-size: 9.2pt; line-height: 1.25; }
+  .cv-subhead { flex-direction: row !important; justify-content: space-between; }
 }

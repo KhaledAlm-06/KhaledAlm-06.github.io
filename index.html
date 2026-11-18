@@ -257,81 +257,148 @@
   <div id="cv-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="cv-title" hidden>
     <div class="modal-card cv-paper">
       <div class="cv-toolbar no-print">
-        <span id="cv-title" class="kicker" style="color:#4b4943; margin:0;">CURRICULUM VITAE · PRINT READY</span>
+        <span id="cv-title" class="kicker" style="color:#4b4943; margin:0;">INDUSTRY-STANDARD SWE CV · A4 SINGLE PAGE</span>
         <div style="display:flex; gap:8px; flex-wrap:wrap;">
           <a href="cv.html" target="_blank" rel="noopener noreferrer" class="btn-outline btn-sm" style="background:#ffffff; color:#141413; border-color:#c9c2b5;">Standalone Page &nearr;</a>
+          <a href="Khaled_Almasharqah_CV.pdf" download class="btn-outline btn-sm" style="background:#ffffff; color:#141413; border-color:#c9c2b5;">Download PDF</a>
           <button type="button" id="print-cv-btn" class="btn-primary btn-sm">Print / Save PDF</button>
           <button type="button" id="close-cv-btn" class="btn-outline btn-sm" style="background:#ffffff; color:#141413; border-color:#c9c2b5;">Close</button>
         </div>
       </div>
 
       <article class="cv-sheet">
-        <header class="cv-header">
-          <div>
-            <h1>Khaled Almasharqah</h1>
-            <p class="cv-sub">MEng Software Engineering (Year 3) &middot; Heriot-Watt University</p>
-          </div>
-          <div class="cv-meta">
-            <div><span class="nowrap">almasharqahkhaled@gmail.com</span> &middot; <span class="nowrap">+44 7878 873206</span></div>
-            <div><a href="https://khaledalm-06.github.io/" target="_blank" rel="noopener noreferrer" class="nowrap">khaledalm-06.github.io</a> &middot; <a href="https://github.com/KhaledAlm-06" target="_blank" rel="noopener noreferrer" class="nowrap">github.com/KhaledAlm-06</a></div>
-            <div><span class="nowrap">Languages: English &amp; Arabic (Fluent Bilingual)</span></div>
+        <header class="cv-header-center">
+          <h1>Khaled Almasharqah</h1>
+          <div class="cv-contact-line">
+            <span>+44 7878 873206</span><span class="cv-sep">|</span>
+            <a href="mailto:almasharqahkhaled@gmail.com">almasharqahkhaled@gmail.com</a><span class="cv-sep">|</span>
+            <a href="https://khaledalm-06.github.io/" target="_blank" rel="noopener noreferrer">khaledalm-06.github.io</a><span class="cv-sep">|</span>
+            <a href="https://github.com/KhaledAlm-06" target="_blank" rel="noopener noreferrer">github.com/KhaledAlm-06</a>
           </div>
         </header>
 
-        <section class="cv-sec">
-          <h2>Engineering Profile</h2>
-          <p>Third-year MEng Software Engineering undergraduate at Heriot-Watt University targeting 2027 software engineering internships and industrial placements. Combines first-principles systems engineering (compilers, language models, real-time 2D/3D engines) with proven operational composure, front-line POS/kiosk troubleshooting, and bilingual communication in high-throughput teams.</p>
-        </section>
-
-        <section class="cv-sec">
+        <section class="cv-section">
           <h2>Education</h2>
-          <div class="cv-row"><strong>MEng Software Engineering (Year 3) &mdash; Heriot-Watt University</strong><span>2024 &mdash; 2029 (Expected)</span></div>
-          <ul>
-            <li><strong>Key Coursework:</strong> Hardware-Software Interface (C99, Pointers &amp; Memory Management), Data Structures &amp; Algorithms, Software Design &amp; Validation, Concurrent &amp; Distributed Systems.</li>
-            <li><strong>Stage 3 Scrum Group Project:</strong> Engineered a full-stack multi-modal transport and route-booking platform integrating OpenStreetMap geospatial routing, relational SQL schemas, and iterative agile delivery.</li>
-          </ul>
-          <div class="cv-row"><strong>Secondary Education &mdash; Highers &amp; Certifications</strong><span>2022 &mdash; 2024</span></div>
-          <p>Higher Mathematics, Higher English, Higher Equivalent Arabic &middot; First Aid Certified.</p>
-        </section>
-
-        <section class="cv-sec">
-          <h2>Technical Skills</h2>
-          <div class="cv-skills-grid">
-            <div><strong>Languages:</strong> Python, Java (JDK 21), C (C99), JavaScript (ES2024 / Node.js), SQL, HTML5 &amp; CSS3</div>
-            <div><strong>Systems &amp; Core Engineering:</strong> Bytecode Compilation &amp; AST Parsing, Reverse-Mode Autograd &amp; Attention, 2D/3D Linear Algebra &amp; Physics Simulation, Virtual DOM Reconciliation, Git, Linux CLI, Agile/Scrum</div>
+          <div class="cv-entry">
+            <div class="cv-subhead">
+              <strong>Heriot-Watt University</strong>
+              <strong class="cv-right">Sep 2024 &ndash; May 2029</strong>
+            </div>
+            <div class="cv-subhead">
+              <em>MEng Software Engineering (Year 3 Undergraduate)</em>
+              <em class="cv-right">Available for 2027 Internships &amp; Placements</em>
+            </div>
+            <ul class="cv-bullets">
+              <li><strong>Relevant Coursework:</strong> Hardware-Software Interface (C99, Pointers &amp; Manual Memory Management), Data Structures &amp; Algorithms, Software Design &amp; Validation, Concurrent &amp; Distributed Systems, Database Management Systems.</li>
+              <li><strong>Secondary Education &amp; Certifications (2022 &ndash; 2024):</strong> Higher Mathematics, Higher English, Higher Equivalent Arabic; Certified First Aider.</li>
+            </ul>
           </div>
         </section>
 
-        <section class="cv-sec">
-          <h2>Selected Technical Projects</h2>
-          <div class="cv-row"><strong>GPT-2 Language Model &amp; Autograd Engine from Scratch</strong><span class="cv-proj-meta">Python &middot; Zero Dependencies &middot; github.com/KhaledAlm-06/gpt-llm-from-scratch-python</span></div>
-          <ul>
-            <li>Implemented Byte-Pair Encoding (BPE) subword tokenization, a dynamic reverse-mode automatic differentiation DAG, and multi-head causal self-attention with upper-triangular masking purely from first principles without PyTorch or NumPy.</li>
-          </ul>
-          <div class="cv-row"><strong>Enkel JVM <code>.class</code> Bytecode Compiler</strong><span class="cv-proj-meta">Java 21 &middot; Zero Dependencies &middot; github.com/KhaledAlm-06/enkel-jvm-bytecode-compiler-java</span></div>
-          <ul>
-            <li>Built a recursive-descent parser and compiler pipeline emitting valid <code>0xCAFEBABE</code> JVM binary classfiles with constant-pool serialization, local frame indexing, and 16-bit signed branch backpatching verified directly on JDK 21.</li>
-          </ul>
-          <div class="cv-row"><strong>3D Software Rasterizer, 2D Physics Solver &amp; Virtual DOM Engine</strong><span class="cv-proj-meta">JavaScript &middot; Live on khaledalm-06.github.io</span></div>
-          <ul>
-            <li>Built a zero-WebGL 3D renderer (4&times;4 projection matrices, backface culling, Gouraud shading), impulse-based 2D rigid-body &amp; Verlet pendulum dynamics, and a custom Virtual DOM + Redux state container running live at 60 FPS.</li>
+        <section class="cv-section">
+          <h2>Technical Skills</h2>
+          <ul class="cv-skills-list">
+            <li><strong>Languages:</strong> Python, Java (JDK 21), C (C99), JavaScript (ES6+ / Node.js), SQL, PHP, HTML5, CSS3</li>
+            <li><strong>Systems &amp; Core Engineering:</strong> Compilers (ASTs, JVM Bytecode), ML Internals (Autograd, Self-Attention, BPE), 2D/3D Graphics &amp; Physics, Virtual DOM</li>
+            <li><strong>Developer Tools &amp; Practices:</strong> Git, Linux / POSIX CLI, Agile (Scrum), Object-Oriented Design, SQL Schema Design, Bilingual (English &amp; Arabic)</li>
           </ul>
         </section>
 
-        <section class="cv-sec">
+        <section class="cv-section">
+          <h2>Technical Projects</h2>
+
+          <div class="cv-entry">
+            <div class="cv-subhead">
+              <span><strong>GPT-2 Language Model &amp; Autograd Engine</strong> | <em>Python</em></span>
+              <a class="cv-proj-link" href="https://github.com/KhaledAlm-06/gpt-llm-from-scratch-python" target="_blank" rel="noopener noreferrer">github.com/KhaledAlm-06/gpt-llm-from-scratch-python</a>
+            </div>
+            <ul class="cv-bullets">
+              <li>Engineered a complete GPT-2 transformer architecture from first principles without PyTorch or NumPy, implementing Byte-Pair Encoding (BPE) subword tokenization with special-token splitting and vocabulary serialization.</li>
+              <li>Architected a dynamic reverse-mode automatic differentiation engine supporting DAG topological sorting and analytical backward passes across <code>MatMul</code>, <code>LayerNorm</code>, <code>GELU</code>, <code>Softmax</code>, and cross-entropy loss operations.</li>
+              <li>Implemented multi-head causal self-attention with upper-triangular future masking, residual pre-norm layers, positional embeddings, and autoregressive temperature/top-k token generation.</li>
+            </ul>
+          </div>
+
+          <div class="cv-entry">
+            <div class="cv-subhead">
+              <span><strong>Enkel JVM Bytecode Compiler</strong> | <em>Java 21, JVM Bytecode</em></span>
+              <a class="cv-proj-link" href="https://github.com/KhaledAlm-06/enkel-jvm-bytecode-compiler-java" target="_blank" rel="noopener noreferrer">github.com/KhaledAlm-06/enkel-jvm-bytecode-compiler-java</a>
+            </div>
+            <ul class="cv-bullets">
+              <li>Built an end-to-end recursive-descent compiler in Java 21 that lexes and parses source programs into a statically-typed Abstract Syntax Tree (AST) with lexical block scoping and local-variable slot indexing.</li>
+              <li>Implemented a binary <code>0xCAFEBABE</code> <code>.class</code> file serializer from scratch that constructs the JVM Constant Pool (<code>UTF8</code>, <code>Class</code>, <code>NameAndType</code>, <code>Methodref</code>), method descriptors, and <code>Code</code> attributes with zero external bytecode libraries.</li>
+              <li>Engineered 16-bit signed relative jump backpatching (<code>if_icmple</code>, <code>goto</code>) and operand-stack depth calculation, verifying compiled <code>.class</code> binaries (including recursive factorial <code>fact(6)=720</code>) directly on the JDK 21 HotSpot VM.</li>
+            </ul>
+          </div>
+
+          <div class="cv-entry">
+            <div class="cv-subhead">
+              <span><strong>3D Software Rasterizer, 2D Physics &amp; Virtual DOM</strong> | <em>JavaScript, HTML5 Canvas</em></span>
+              <a class="cv-proj-link" href="https://khaledalm-06.github.io/" target="_blank" rel="noopener noreferrer">khaledalm-06.github.io</a>
+            </div>
+            <ul class="cv-bullets">
+              <li>Developed a zero-WebGL 3D software rendering pipeline implementing 4&times;4 homogeneous projection matrices, perspective division, surface-normal backface culling, painter&rsquo;s Z-sorting, and Gouraud shading at 60 FPS.</li>
+              <li>Built a 2D rigid-body physics engine featuring Separating Axis Theorem (SAT) collision detection, impulse-based restitution and Coulomb friction solvers, and iterative Verlet distance-constraint relaxation.</li>
+              <li>Implemented a custom Virtual DOM tree reconciler and Redux-style unidirectional state store from scratch to drive reactive UI rendering and sub-millisecond diff telemetry on my live portfolio.</li>
+            </ul>
+          </div>
+
+          <div class="cv-entry">
+            <div class="cv-subhead">
+              <span><strong>Multi-Modal Transport Booking Platform</strong> | <em>PHP, JS, SQL, OpenStreetMap, Scrum</em></span>
+              <em class="cv-right">Heriot-Watt Stage 3 Group Project</em>
+            </div>
+            <ul class="cv-bullets">
+              <li>Collaborated in a Stage 3 Agile Scrum engineering team to design, implement, and validate a full-stack multi-modal journey planning and ticket-booking web application across iterative sprints.</li>
+              <li>Integrated OpenStreetMap geospatial map rendering and multi-leg route calculation with a normalized relational SQL database managing transit schedules, fare rules, and user reservations.</li>
+              <li>Participated in sprint planning, peer code reviews, requirements validation, and end-to-end integration testing.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="cv-section">
           <h2>Work &amp; Leadership Experience</h2>
-          <div class="cv-row"><strong>Customer Assistant &amp; Floor Tech Support &mdash; Vue Cinema</strong><span>Oct 2024 &mdash; Aug 2025</span></div>
-          <ul>
-            <li>Delivered calm, high-throughput guest service during sold-out screenings, maintaining accurate POS cash and card reconciliation while troubleshooting self-service ticketing kiosks and handheld scanners to eliminate queue bottlenecks.</li>
-          </ul>
-          <div class="cv-row"><strong>Front of House Team Member &mdash; Pepe&rsquo;s Grill</strong><span>Aug 2024 &mdash; Nov 2024</span></div>
-          <ul>
-            <li>Coordinated real-time order flow between front-of-house POS terminals and kitchen staff under peak evening load, resolving service delays calmly and supporting new-hire onboarding.</li>
-          </ul>
-          <div class="cv-row"><strong>Youth Mentor, Scout Leader &amp; Language Teaching Assistant (Arabic &amp; English)</strong><span>Sep 2021 &mdash; Jul 2024</span></div>
-          <ul>
-            <li>Mentored teenagers aged 13&ndash;17 in personal development workshops, led structured outdoor Scout team challenges, and supported bilingual Arabic/English classroom instruction and student progress tracking.</li>
-          </ul>
+
+          <div class="cv-entry">
+            <div class="cv-subhead">
+              <strong>Customer Assistant &amp; Floor Technical Support</strong>
+              <strong class="cv-right">Oct 2024 &ndash; Aug 2025</strong>
+            </div>
+            <div class="cv-subhead">
+              <em>Vue Cinema</em>
+            </div>
+            <ul class="cv-bullets">
+              <li>Performed first-line hardware and software diagnostics on self-service ticketing kiosks, POS terminals, and optical ticket scanners during peak sold-out screenings, minimizing equipment downtime and queue bottlenecks.</li>
+              <li>Processed high-volume cash and card transactions with zero reconciliation discrepancies while resolving time-sensitive customer booking and seating escalations calmly on the floor.</li>
+            </ul>
+          </div>
+
+          <div class="cv-entry">
+            <div class="cv-subhead">
+              <strong>Front of House Team Member</strong>
+              <strong class="cv-right">Aug 2024 &ndash; Nov 2024</strong>
+            </div>
+            <div class="cv-subhead">
+              <em>Pepe&rsquo;s Grill</em>
+            </div>
+            <ul class="cv-bullets">
+              <li>Coordinated real-time order throughput between front-of-house POS terminals and kitchen staff during high-volume evening shifts, maintaining rapid service turnaround and supporting new-hire onboarding.</li>
+            </ul>
+          </div>
+
+          <div class="cv-entry">
+            <div class="cv-subhead">
+              <strong>Youth Mentor, Scout Leader &amp; Bilingual Teaching Assistant</strong>
+              <strong class="cv-right">Sep 2021 &ndash; Jul 2024</strong>
+            </div>
+            <div class="cv-subhead">
+              <em>Community Youth &amp; Education Programmes</em>
+            </div>
+            <ul class="cv-bullets">
+              <li>Led weekly digital literacy and personal development workshops for cohorts of 13&ndash;17-year-old students and organized structured outdoor Scout problem-solving challenges.</li>
+              <li>Supported bilingual (English and Arabic) classroom instruction, adapting explanations for diverse learners and tracking student academic progress.</li>
+            </ul>
+          </div>
         </section>
       </article>
     </div>
